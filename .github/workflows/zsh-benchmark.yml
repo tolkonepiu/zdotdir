@@ -48,8 +48,8 @@ jobs:
 
       - name: Init Zsh environment
         run: |
-          compaudit | xargs sudo chmod g-w
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
+          compaudit
         shell: script --return --quiet --command "zsh -li --rcs {0}"
         env:
           TERM: screen-256color
