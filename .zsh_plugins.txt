@@ -5,3 +5,6 @@
 
 # Prompt
 romkatv/powerlevel10k
+
+# Utilities
+romkatv/zsh-bench kind:path

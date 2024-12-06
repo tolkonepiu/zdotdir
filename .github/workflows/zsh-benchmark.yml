@@ -28,10 +28,10 @@ jobs:
 
       - name: Init Zsh environment
         run: |
-          zsh -c "echo $ZDOTDIR"
+          zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
 
       - name: Run Zsh Benchmark
-        run: zsh ./.github/scripts/zsh-benchmark.sh
+        run: zsh ./.github/scripts/zsh-benchmark.zsh
         env:
           BENCHMARK_RESULT: benchmark-result.json
 
