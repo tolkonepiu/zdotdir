@@ -46,6 +46,11 @@ jobs:
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
+      - name: Fix insecure directories for Zsh
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo chmod -R go-w /usr/share/zsh /usr/share/zsh/vendor-completions
+
       - name: Init Zsh environment
         run: |
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
