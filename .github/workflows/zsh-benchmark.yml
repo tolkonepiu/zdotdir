@@ -46,6 +46,10 @@ jobs:
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
+      - name: Fix permissions for compinit
+        run: |
+          compaudit | xargs chmod g-w
+
       - name: Init Zsh environment
         run: |
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
