@@ -6,5 +6,10 @@
 # Prompt
 romkatv/powerlevel10k
 
+# Aliases
+djui/alias-tips
+
 # Utilities
 romkatv/zsh-bench kind:path
+sobolevn/wakatime-zsh-plugin conditional:is-macos
+zshzoo/macos conditional:is-macos
