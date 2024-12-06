@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733515312272,
+  "lastUpdate": 1733516227829,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -293,6 +293,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.574,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "a2fc131f660271dd7afba783db307d52977f6482",
+          "message": "Update GitHub Actions workflow to include Ubuntu support for Zsh benchmarks",
+          "timestamp": "2024-12-07T04:14:25+08:00",
+          "tree_id": "6ba93afbfdc662249cdabf9d3c8b13295d3a3a3f",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/a2fc131f660271dd7afba783db307d52977f6482"
+        },
+        "date": 1733516226419,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 17.328,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 143.509,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 3.987,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.121,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 52.766,
             "unit": "ms"
           }
         ]
