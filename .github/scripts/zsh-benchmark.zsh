@@ -1,42 +1,20 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
 
-ZSH_BENCH_REPO="https://github.com/romkatv/zsh-bench"
-ZSH_BENCH_DIR="${ZSH_BENCH_DIR:-${RUNNER_TEMP:-${TMPDIR:-/tmp}}/zsh-bench}"
 BENCHMARK_RESULT="${BENCHMARK_RESULT:-/dev/stdout}"
-
-# Ensure git is installed
-if ! command -v git &>/dev/null; then
-    echo "Error: git is not installed." >&2
-    exit 1
-fi
-
-# Setup cleanup to remove temporary files, excluding benchmark result
-cleanup() {
-    echo "Cleaning up temporary files..."
-    rm -rf "$ZSH_BENCH_DIR"
-}
-trap cleanup EXIT
 
 # Start message
 echo "Starting Zsh benchmark..."
-echo "Temporary directory for zsh-bench: $ZSH_BENCH_DIR"
 
-# Clone zsh-bench repository if it doesn't exist
-if [ ! -d "$ZSH_BENCH_DIR" ]; then
-    echo "Cloning zsh-bench repository from $ZSH_BENCH_REPO..."
-    git clone "$ZSH_BENCH_REPO" "$ZSH_BENCH_DIR" &>/dev/null || {
-        echo "Error: Failed to clone $ZSH_BENCH_REPO" >&2
-        exit 1
-    }
-    echo "Repository cloned successfully."
-else
-    echo "zsh-bench repository already exists in $ZSH_BENCH_DIR. Skipping clone."
+# Ensure zsh-bench is installed
+if ! command -v zsh-bench &>/dev/null; then
+    echo "Error: zsh-bench is not installed." >&2
+    exit 1
 fi
 
 # Run zsh-bench and process results
 echo "Running zsh-bench..."
-"$ZSH_BENCH_DIR/zsh-bench" |
+zsh-bench |
     awk '
 BEGIN {
     print "["   # Start the JSON array

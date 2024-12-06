@@ -7,6 +7,8 @@ on:
       - main
 
 permissions:
+  # Required to post benchmark results as comments on pull requests
+  pull-requests: write
   # deployments permission to deploy GitHub pages website
   deployments: write
   # contents permission to update benchmark contents in gh-pages branch
@@ -26,8 +28,14 @@ jobs:
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
+      - name: Init Zsh environment
+        run: |
+          zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
+        shell: zsh -li --rcs {0}
+
       - name: Run Zsh Benchmark
-        run: bash ./.github/scripts/zsh-benchmark.sh
+        run: zsh ./.github/scripts/zsh-benchmark.zsh
+        shell: zsh -li --rcs {0}
         env:
           BENCHMARK_RESULT: benchmark-result.json
 
