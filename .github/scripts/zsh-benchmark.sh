@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
 
 ZSH_BENCH_REPO="https://github.com/romkatv/zsh-bench"
