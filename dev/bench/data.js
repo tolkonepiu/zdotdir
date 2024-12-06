@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733517598198,
+  "lastUpdate": 1733524420544,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -440,6 +440,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 46.163,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "26bd5dddaae5b6461f5c4136d200b6fce7a36032",
+          "message": "Removed Ubuntu benchmarking job from the Zsh benchmark workflow",
+          "timestamp": "2024-12-07T06:31:38+08:00",
+          "tree_id": "c82303a6cdd94ffd31ead137cfbf73d0eab0ff92",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/26bd5dddaae5b6461f5c4136d200b6fce7a36032"
+        },
+        "date": 1733524419232,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 22.473,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 147.109,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 3.525,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.112,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.401,
             "unit": "ms"
           }
         ]
