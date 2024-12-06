@@ -33,6 +33,7 @@ jobs:
 
       - name: Run Zsh Benchmark
         run: zsh ./.github/scripts/zsh-benchmark.zsh
+        shell: zsh -li --rcs {0}
         env:
           BENCHMARK_RESULT: benchmark-result.json
 
