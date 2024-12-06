@@ -16,11 +16,27 @@ permissions:
 
 jobs:
   benchmark:
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: macos-latest
+            name: macOS
+            install: |
+              brew update
+              brew install zsh
+          - os: ubuntu-latest
+            name: Ubuntu
+            install: |
+              sudo apt update
+              sudo apt install -y zsh
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: ${{ matrix.install }}
 
       - name: Set Zsh environment (ZDOTDIR)
         run: |
@@ -42,7 +58,7 @@ jobs:
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: "${{ runner.os }}"
+          name: "${{ matrix.name }}"
           tool: "customSmallerIsBetter"
           output-file-path: benchmark-result.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
