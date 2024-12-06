@@ -1,0 +1,7 @@
+#!/bin/zsh
+#
+# .zsh_plugins.txt - antidote plugins file
+#
+
+# Prompt
+romkatv/powerlevel10k

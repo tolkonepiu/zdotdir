@@ -26,6 +26,11 @@ jobs:
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
+      - name: Init Zsh environment
+        run: |
+          echo $ZDOTDIR
+        shell: zsh
+
       - name: Run Zsh Benchmark
         run: bash ./.github/scripts/zsh-benchmark.sh
         env:
