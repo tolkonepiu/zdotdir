@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733462253217,
+  "lastUpdate": 1733502202099,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -48,6 +48,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 28.661,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e10009ce0007abd9124ed0b2a92063b7bed32e35",
+          "message": "Add antidote plugin manager and p10k instant prompt (#3)\n\n* Add antidote plugin manager and p10k instant prompt\n\n* Update GitHub Actions workflow for Zsh benchmark to ensure correct Zsh initialization\n\n* Replaced the separate command to start Zsh and print `$ZDOTDIR` with a single command `zsh -c \"echo $ZDOTDIR\"` for streamlined execution\n\n* Refactor zsh-benchmark scripts and add p10k configuration\n\n* Use an interactive login shell when initializing the Zsh environment\n\n* Update Zsh benchmark workflow to explicitly set shell in benchmark step\n\n* Update GitHub Actions workflow to enable posting comments on PRs",
+          "timestamp": "2024-12-07T00:22:30+08:00",
+          "tree_id": "3d5664e99efeafdcbe21c6dd88935cac2eef8ba0",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/e10009ce0007abd9124ed0b2a92063b7bed32e35"
+        },
+        "date": 1733502201228,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.054,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 88.089,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.496,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 0.958,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.11,
             "unit": "ms"
           }
         ]
