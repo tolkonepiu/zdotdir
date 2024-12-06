@@ -53,6 +53,7 @@ jobs:
         shell: script --return --quiet --command "zsh -li --rcs {0}"
         env:
           TERM: screen-256color
+          ZSH_DISABLE_COMPFIX: 1
 
       - name: Run Zsh Benchmark
         run: zsh ./.github/scripts/zsh-benchmark.zsh
@@ -60,6 +61,7 @@ jobs:
         env:
           BENCHMARK_RESULT: benchmark-result.json
           TERM: screen-256color
+          ZSH_DISABLE_COMPFIX: 1
 
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
