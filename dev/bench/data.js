@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733517145419,
+  "lastUpdate": 1733517598198,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -391,6 +391,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.171,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "17ba8746dd6040b91487bc8ca26cec6e3111062a",
+          "message": "Optimized Zsh plugin initialization by adding ez-compinit plugin",
+          "timestamp": "2024-12-07T04:37:50+08:00",
+          "tree_id": "535c78e5895794a1c9925e7a552fb3b960d3ca94",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/17ba8746dd6040b91487bc8ca26cec6e3111062a"
+        },
+        "date": 1733517596736,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.682,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 149.952,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.383,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.137,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 46.163,
             "unit": "ms"
           }
         ]
