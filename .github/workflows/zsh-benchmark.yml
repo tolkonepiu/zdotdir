@@ -16,7 +16,13 @@ jobs:
 
       - name: Set Zsh environment (ZDOTDIR)
         run: |
-          echo ". $GITHUB_WORKSPACE/.zshenv" > ~/.zshenv
+          ZDOTDIR=~/.config/zsh
+          ln -s $GITHUB_WORKSPACE $ZDOTDIR
+          echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
+
+      - name: Check Zsh environment
+        run: |
+          echo ""
 
       - name: Run Zsh Benchmark
         run: bash ./.github/scripts/zsh-benchmark.sh
@@ -26,7 +32,7 @@ jobs:
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: "$RUNNER_OS"
+          name: "$${{ runner.os }}"
           tool: "customSmallerIsBetter"
           output-file-path: benchmark-result.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
