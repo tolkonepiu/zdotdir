@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733513038023,
+  "lastUpdate": 1733515312272,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -244,6 +244,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 40.318,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "1bee20ade44556c4177971fcbefc469d0205dacf",
+          "message": "Remove Wakatime installation check and update Wakatime plugin source",
+          "timestamp": "2024-12-07T04:00:11+08:00",
+          "tree_id": "9014246e031937a4b201953a94e19208bd4b6d05",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/1bee20ade44556c4177971fcbefc469d0205dacf"
+        },
+        "date": 1733515310949,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.853,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 129.279,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.021,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.044,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.574,
             "unit": "ms"
           }
         ]
