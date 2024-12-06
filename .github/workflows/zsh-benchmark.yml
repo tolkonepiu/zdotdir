@@ -7,6 +7,8 @@ on:
       - main
 
 permissions:
+  # Required to post benchmark results as comments on pull requests
+  pull-requests: write
   # deployments permission to deploy GitHub pages website
   deployments: write
   # contents permission to update benchmark contents in gh-pages branch
