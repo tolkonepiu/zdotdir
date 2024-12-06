@@ -22,16 +22,16 @@ jobs:
       fail-fast: true
       matrix:
         include:
-          - os: macos-latest
-            name: macOS
-            install: |
-              brew update
-              brew install zsh
           - os: ubuntu-latest
             name: Ubuntu
             install: |
               sudo apt update
               sudo apt install -y zsh
+          - os: macos-latest
+            name: macOS
+            install: |
+              brew update
+              brew install zsh
 
     steps:
       - name: Checkout repository
@@ -49,7 +49,7 @@ jobs:
       - name: Init Zsh environment
         run: |
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
-        shell: script -q -e -c "zsh -li --rcs {0}"
+        shell: script --return --quiet --command "zsh -li --rcs {0}"
         env:
           TERM: screen-256color
 
