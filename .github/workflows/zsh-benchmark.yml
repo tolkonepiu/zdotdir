@@ -47,7 +47,7 @@ jobs:
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
       - name: Fix permissions for compinit
-        shell: zsh {0}
+        shell: zsh -li --rcs {0}
         run: |
           sudo compaudit | xargs chmod g-w
 
