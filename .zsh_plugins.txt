@@ -3,6 +3,9 @@
 # .zsh_plugins.txt - antidote plugins file
 #
 
+# Completions
+mattmc3/ez-compinit
+
 # Prompt
 romkatv/powerlevel10k
 
