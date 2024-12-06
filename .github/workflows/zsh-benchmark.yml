@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Run Zsh Benchmark
-        run: bash ./scripts/zsh-benchmark.sh
+        run: bash ./.github/scripts/zsh-benchmark.sh
 
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
