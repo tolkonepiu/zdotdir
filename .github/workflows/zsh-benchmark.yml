@@ -1,0 +1,41 @@
+name: Zsh Benchmark
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  benchmark:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set Zsh environment (ZDOTDIR)
+        run: |
+          ZDOTDIR=~/.config/zsh
+          ln -s $GITHUB_WORKSPACE $ZDOTDIR
+          echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
+
+      - name: Check Zsh environment
+        run: |
+          echo ""
+
+      - name: Run Zsh Benchmark
+        run: bash ./.github/scripts/zsh-benchmark.sh
+        env:
+          BENCHMARK_RESULT: benchmark-result.json
+
+      - name: Upload Benchmark Results
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: "${{ runner.os }}"
+          tool: "customSmallerIsBetter"
+          output-file-path: benchmark-result.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          auto-push: ${{ github.event_name == 'push' }}
+          comment-on-alert: ${{ github.event_name == 'pull_request' }}
+          fail-on-alert: false
