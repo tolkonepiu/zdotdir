@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733510131998,
+  "lastUpdate": 1733513038023,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -195,6 +195,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.997,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "63f77e19e4df3d9d462aee2c950e916edae72c4f",
+          "message": "Add is-wakatime-installed check, enhanced `brew.zsh` by adding the `brews` function",
+          "timestamp": "2024-12-07T03:21:25+08:00",
+          "tree_id": "cf266a3f844b0f36f13801ac2a11ec827a5eca6d",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/63f77e19e4df3d9d462aee2c950e916edae72c4f"
+        },
+        "date": 1733513036715,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.216,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 126.947,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.402,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 0.988,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.318,
             "unit": "ms"
           }
         ]
