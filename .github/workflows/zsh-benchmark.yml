@@ -6,9 +6,6 @@ on:
     branches:
       - main
 
-env:
-  BENCHMARK_RESULT: ./benchmark-result.json
-
 jobs:
   benchmark:
     runs-on: macos-latest
@@ -23,13 +20,15 @@ jobs:
 
       - name: Run Zsh Benchmark
         run: bash ./.github/scripts/zsh-benchmark.sh
+        env:
+          BENCHMARK_RESULT: benchmark-result.json
 
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
         with:
           name: "$RUNNER_OS"
           tool: "customSmallerIsBetter"
-          output-file-path: "$BENCHMARK_RESULT"
+          output-file-path: benchmark-result.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: ${{ github.event_name == 'push' }}
           comment-on-alert: ${{ github.event_name == 'pull_request' }}
