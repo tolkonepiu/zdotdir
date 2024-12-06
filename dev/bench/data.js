@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733507279562,
+  "lastUpdate": 1733510131998,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -146,6 +146,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 39.044,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "0548b40af571dbc6ec9ca17565e730040c941fac",
+          "message": "Update Zsh configuration and aliases for enhanced shell experience\n\n- Added new plugins in `.zsh_plugins.txt` to improve functionality:\n  - `djui/alias-tips` for displaying helpful tips for aliases.\n  - `sobolevn/wakatime-zsh-plugin` conditionally for macOS users to track coding activity.\n  - `zshzoo/macos` conditionally for macOS, enhancing utilities exclusive to the OS.\n\n- Created a new file `.zshrc.d/aliases.zsh` for defining common shell aliases:\n  - Added aliases for improved `vim`, `ls`, and `git` commands.\n  - Introduced aliases to correct common command typos (e.g., `quit='exit'`).\n  - Included aliases for simplified file and directory finding commands (`fd` and `ff`).",
+          "timestamp": "2024-12-07T02:33:34+08:00",
+          "tree_id": "72058962f9ea7cb3f56a3680beedc68778714aed",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/0548b40af571dbc6ec9ca17565e730040c941fac"
+        },
+        "date": 1733510130762,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.668,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 128.809,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.097,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.051,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.997,
             "unit": "ms"
           }
         ]
