@@ -54,19 +54,13 @@ jobs:
       - name: Init Zsh environment
         run: |
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
-          compaudit
-        shell: script --return --quiet --command "zsh -li --rcs {0}"
-        env:
-          TERM: screen-256color
-          ZSH_DISABLE_COMPFIX: 1
+        shell: zsh -li --rcs {0}
 
       - name: Run Zsh Benchmark
         run: zsh ./.github/scripts/zsh-benchmark.zsh
-        shell: script --return --quiet --command "zsh -li --rcs {0}"
+        shell: zsh -li --rcs {0}
         env:
           BENCHMARK_RESULT: benchmark-result.json
-          TERM: screen-256color
-          ZSH_DISABLE_COMPFIX: 1
 
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
