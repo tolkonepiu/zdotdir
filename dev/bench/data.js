@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733502202099,
+  "lastUpdate": 1733507279562,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -97,6 +97,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.11,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "c77866e1c3b9ae539305a5371ece9069d0bc2144",
+          "message": "Refactor color settings in Powerlevel10k configuration",
+          "timestamp": "2024-12-07T01:46:15+08:00",
+          "tree_id": "6873fbf28b881d4911cff9b283e5b8cb5eff4fdc",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c77866e1c3b9ae539305a5371ece9069d0bc2144"
+        },
+        "date": 1733507278171,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.452,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 86.28,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.505,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.02,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 39.044,
             "unit": "ms"
           }
         ]
