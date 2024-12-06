@@ -27,11 +27,11 @@ jobs:
             install: |
               brew update
               brew install zsh
-          - os: ubuntu-latest
-            name: Ubuntu
-            install: |
-              sudo apt update
-              sudo apt install -y zsh
+          # - os: ubuntu-latest
+          #   name: Ubuntu
+          #   install: |
+          #     sudo apt update
+          #     sudo apt install -y zsh
 
     steps:
       - name: Checkout repository
@@ -48,7 +48,7 @@ jobs:
 
       - name: Init Zsh environment
         run: |
-          zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
+          echo "ZDOTDIR is set to: $ZDOTDIR"
         shell: zsh -li --rcs {0}
         env:
           TERM: screen-256color
