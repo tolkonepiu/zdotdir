@@ -48,7 +48,7 @@ jobs:
 
       - name: Init Zsh environment
         run: |
-          sudo compaudit | xargs chmod g-w
+          compaudit | xargs sudo chmod g-w
           zsh -c 'echo "ZDOTDIR is set to: $ZDOTDIR"'
         shell: script --return --quiet --command "zsh -li --rcs {0}"
         env:
