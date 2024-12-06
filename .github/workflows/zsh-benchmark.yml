@@ -21,13 +21,6 @@ jobs:
         run: |
           echo ". $GITHUB_WORKSPACE/.zshenv" > ~/.zshenv
 
-      - name: Set up dependencies
-        run: |
-          if [[ "$(uname)" == "Linux" ]]; then
-            sudo apt update
-            sudo apt install -y zsh git
-          fi
-
       - name: Run Zsh Benchmark
         run: bash ./.github/scripts/zsh-benchmark.sh
 
@@ -38,6 +31,6 @@ jobs:
           tool: "customSmallerIsBetter"
           output-file-path: "$BENCHMARK_RESULT"
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          save-data: ${{ github.event_name == 'push' }}
+          auto-push: ${{ github.event_name == 'push' }}
           comment-on-alert: ${{ github.event_name == 'pull_request' }}
           fail-on-alert: false

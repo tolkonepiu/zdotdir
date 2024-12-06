@@ -2,7 +2,7 @@
 set -e
 
 ZSH_BENCH_REPO="https://github.com/romkatv/zsh-bench"
-ZSH_BENCH_DIR="${ZSH_BENCH_DIR:-${RUNNER_TEMP:-${TMPDIR:-/tmp/}}zsh-bench}"
+ZSH_BENCH_DIR="${ZSH_BENCH_DIR:-${RUNNER_TEMP:-${TMPDIR:-/tmp}}/zsh-bench}"
 BENCHMARK_RESULT="${BENCHMARK_RESULT:-/dev/stdout}"
 
 # Ensure git is installed
