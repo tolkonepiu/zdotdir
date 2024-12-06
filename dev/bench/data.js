@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733516227829,
+  "lastUpdate": 1733517145419,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -342,6 +342,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 52.766,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "9c4773d7ec61f06658e0b27b12183d839d9d282e",
+          "message": "Added environment variable `TERM: screen-256color` to ensure proper terminal emulation compatibility",
+          "timestamp": "2024-12-07T04:29:42+08:00",
+          "tree_id": "5fd6c226be64682721a23bd341a2ead5b68fed99",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/9c4773d7ec61f06658e0b27b12183d839d9d282e"
+        },
+        "date": 1733517144397,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.114,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 126.088,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.502,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 0.949,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.171,
             "unit": "ms"
           }
         ]
