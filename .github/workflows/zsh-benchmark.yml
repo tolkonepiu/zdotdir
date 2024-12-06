@@ -6,6 +6,12 @@ on:
     branches:
       - main
 
+permissions:
+  # deployments permission to deploy GitHub pages website
+  deployments: write
+  # contents permission to update benchmark contents in gh-pages branch
+  contents: write
+
 jobs:
   benchmark:
     runs-on: macos-latest
@@ -19,10 +25,6 @@ jobs:
           ZDOTDIR=~/.config/zsh
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
-
-      - name: Check Zsh environment
-        run: |
-          echo ""
 
       - name: Run Zsh Benchmark
         run: bash ./.github/scripts/zsh-benchmark.sh
