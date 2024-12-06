@@ -11,5 +11,5 @@ djui/alias-tips
 
 # Utilities
 romkatv/zsh-bench kind:path
-sobolevn/wakatime-zsh-plugin conditional:is-wakatime-installed
+tolkonepiu/wakatime-zsh-plugin
 zshzoo/macos conditional:is-macos

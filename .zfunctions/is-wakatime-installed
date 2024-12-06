@@ -1,2 +1,0 @@
-#!/bin/zsh
-[[ -n $(type -p "${ZSH_WAKATIME_BIN:=$HOME/.wakatime/wakatime-cli}") ]]
