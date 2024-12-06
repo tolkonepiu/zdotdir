@@ -6,6 +6,12 @@ BENCHMARK_RESULT="${BENCHMARK_RESULT:-/dev/stdout}"
 # Start message
 echo "Starting Zsh benchmark..."
 
+# Ensure zsh-bench is installed
+if ! command -v zsh-bench &>/dev/null; then
+    echo "Error: zsh-bench is not installed." >&2
+    exit 1
+fi
+
 # Run zsh-bench and process results
 echo "Running zsh-bench..."
 zsh-bench |
