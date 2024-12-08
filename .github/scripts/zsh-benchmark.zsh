@@ -38,7 +38,7 @@ if ! zmodload | grep -q 'zsh/datetime'; then
     zmodload zsh/datetime || echo "Failed to load zsh/datetime"
 fi
 
-"$ZSH_BENCH_DIR/zsh-bench" -l no -i 1
+"$ZSH_BENCH_DIR/zsh-bench" -l no -i 1 -g no
 
 # Run zsh-bench and process results
 echo "Running zsh-bench..."
