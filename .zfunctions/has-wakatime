@@ -1,0 +1,2 @@
+#!/bin/zsh
+command -v wakatime-cli >/dev/null 2>&1

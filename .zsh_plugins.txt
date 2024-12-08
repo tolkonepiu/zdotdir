@@ -5,7 +5,7 @@
 
 # Completions
 mattmc3/ez-compinit
-zsh-users/zsh-completions kind:fpath path:src
+zsh-users/zsh-completions kind:fpath path:src conditional:not-warp
 
 # Prompt
 romkatv/powerlevel10k
@@ -15,10 +15,10 @@ djui/alias-tips
 
 # Utilities
 romkatv/zsh-bench kind:path
-tolkonepiu/wakatime-zsh-plugin
+tolkonepiu/wakatime-zsh-plugin conditional:has-wakatime
 zshzoo/macos conditional:is-macos
 
 # Fish-like features
-zdharma-continuum/fast-syntax-highlighting  # Syntax highlighting
-zsh-users/zsh-autosuggestions               # Auto-suggestions
-zsh-users/zsh-history-substring-search      # Up/Down to search history
+zdharma-continuum/fast-syntax-highlighting                  # Syntax highlighting
+zsh-users/zsh-autosuggestions conditional:not-warp          # Auto-suggestions
+zsh-users/zsh-history-substring-search conditional:not-warp # Up/Down to search history
