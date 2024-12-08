@@ -1,13 +1,13 @@
 name: Zsh Benchmark
 
-on:
+"on":
   pull_request:
   push:
     branches:
       - main
     paths-ignore:
-      - ".gitignore"
-      - ".github/**"
+      - .gitignore
+      - .github/**
 
 permissions:
   # Required to post benchmark results as comments on pull requests
@@ -66,8 +66,8 @@ jobs:
       - name: Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: "${{ matrix.name }}"
-          tool: "customSmallerIsBetter"
+          name: ${{ matrix.name }}
+          tool: customSmallerIsBetter
           output-file-path: benchmark-result.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
           auto-push: ${{ github.event_name == 'push' }}
