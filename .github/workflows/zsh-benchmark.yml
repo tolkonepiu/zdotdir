@@ -30,7 +30,7 @@ jobs:
           #   install: |
           #     brew update
           #     brew install zsh
-          - os: ubuntu-latest
+          - os: ubuntu-20.04
             name: Ubuntu
             install: |
               sudo apt update
