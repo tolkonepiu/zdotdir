@@ -63,6 +63,18 @@ jobs:
           echo "SHELL is set to: $SHELL"
           echo "ZDOTDIR is set to: $ZDOTDIR"
           zmodload -m | grep zsh
+
+          if ! zmodload zsh/datetime; then
+            print -ru2 "zsh/datetime not available"
+          fi
+
+          if ! zmodload zsh/system; then
+            print -ru2 "zsh/system not available"
+          fi
+
+          if ! zmodload zsh/zselect; then
+            print -ru2 "zsh/zselect not available"
+          fi
         shell: zsh -li --rcs {0}
 
       - name: 🚀 Run Zsh Benchmark
