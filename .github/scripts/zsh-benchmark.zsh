@@ -24,7 +24,7 @@ echo "Temporary directory for zsh-bench: $ZSH_BENCH_DIR"
 
 # Clone zsh-bench repository if it doesn't exist
 if [ ! -d "$ZSH_BENCH_DIR" ]; then
-    echo "Cloning zsh-bench repository from $ZSH_BENCH_REPO..."
+    echo "Cloning zsh-bench repository from $ZSH_BENCH_REPO"
     git clone "$ZSH_BENCH_REPO" "$ZSH_BENCH_DIR" &>/dev/null || {
         echo "Error: Failed to clone $ZSH_BENCH_REPO" >&2
         exit 1
@@ -32,6 +32,10 @@ if [ ! -d "$ZSH_BENCH_DIR" ]; then
     echo "Repository cloned successfully."
 else
     echo "zsh-bench repository already exists in $ZSH_BENCH_DIR. Skipping clone."
+fi
+
+if ! zmodload | grep -q 'zsh/datetime'; then
+    zmodload zsh/datetime || echo "Failed to load zsh/datetime"
 fi
 
 "$ZSH_BENCH_DIR/zsh-bench"
