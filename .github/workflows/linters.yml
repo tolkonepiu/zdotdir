@@ -44,6 +44,7 @@ jobs:
       - name: 🚀 Run shfmt
         uses: reviewdog/action-shfmt@v1
         with:
+          shfmt_flags: "-ci"
           reporter: github-pr-review
           filter_mode: nofilter
           fail_on_error: true
