@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733664601954,
+  "lastUpdate": 1733692479164,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -832,6 +832,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 53.336,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "9e93af199728b7c08c7a08bda72baa59ce6cdbc2",
+          "message": "Added new zstyle configurations for the ez-compinit plugin in the .zstyles file.\n  - Specified 'compstyle' as 'zshzoo'.\n  - Enabled 'use-cache' with a value of 'yes'.",
+          "timestamp": "2024-12-09T05:13:00+08:00",
+          "tree_id": "b0769117ddb16a8d6e3a4a087e33595e00450e6d",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/9e93af199728b7c08c7a08bda72baa59ce6cdbc2"
+        },
+        "date": 1733692477745,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.667,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 162.297,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.01,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.163,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 52.584,
             "unit": "ms"
           }
         ]
