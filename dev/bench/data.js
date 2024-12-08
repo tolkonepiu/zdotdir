@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733654442963,
+  "lastUpdate": 1733654965504,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -636,6 +636,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 52.777,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "c8b07f1caa13a34f4eb2228ae01aa859823b9e39",
+          "message": "Add Renovate config",
+          "timestamp": "2024-12-08T18:47:44+08:00",
+          "tree_id": "ce16e66b2f97308361bc01c365794adf415855b4",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c8b07f1caa13a34f4eb2228ae01aa859823b9e39"
+        },
+        "date": 1733654964195,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.864,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 186.396,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 12.508,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.139,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 55.795,
             "unit": "ms"
           }
         ]
