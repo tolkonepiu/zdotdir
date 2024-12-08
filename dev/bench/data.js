@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733664342861,
+  "lastUpdate": 1733664601954,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -783,6 +783,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 52.911,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "45e343c049f148367e044006d8cd9f9f88aa708d",
+          "message": "Fix check for wakatime-cli existence in Zsh functions",
+          "timestamp": "2024-12-08T21:27:52+08:00",
+          "tree_id": "38119e891763ba824f0fd325ce92b10ad2d68451",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/45e343c049f148367e044006d8cd9f9f88aa708d"
+        },
+        "date": 1733664600399,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.807,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 184.209,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 19.215,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.213,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 53.336,
             "unit": "ms"
           }
         ]
