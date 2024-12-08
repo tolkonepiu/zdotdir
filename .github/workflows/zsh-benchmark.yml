@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - .gitignore
+      - .github/
 
 permissions:
   # Required to post benchmark results as comments on pull requests
