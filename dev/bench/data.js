@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733524420544,
+  "lastUpdate": 1733642059095,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -489,6 +489,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.401,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "db7834728a7b1c2e8ff5177705e66db2a332d90e",
+          "message": "Update error status colors to use global `red` variable in `.p10k.zsh`",
+          "timestamp": "2024-12-08T15:12:28+08:00",
+          "tree_id": "a1e3aa65b675fac6d74942b6e6de1ef674187472",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/db7834728a7b1c2e8ff5177705e66db2a332d90e"
+        },
+        "date": 1733642057695,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.934,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 136.756,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 4.199,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 1.204,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.28,
             "unit": "ms"
           }
         ]
