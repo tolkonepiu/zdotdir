@@ -75,12 +75,14 @@ jobs:
             echo "zsh/zselect not available"
           fi
           zmodload -m | grep zsh
+          script --version
         shell: zsh -li --rcs {0}
 
       - name: 🚀 Run Zsh Benchmark
         run: zsh ./.github/scripts/zsh-benchmark.zsh
         env:
           BENCHMARK_RESULT: benchmark-result.json
+          TERM: xterm-256color
 
       - name: 📥 Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
