@@ -76,6 +76,7 @@ jobs:
           fi
           zmodload -m | grep zsh
           script --version
+          script -c "zsh -c 'echo test'"
         shell: zsh -li --rcs {0}
 
       - name: 🚀 Run Zsh Benchmark

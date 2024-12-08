@@ -5,6 +5,8 @@ ZSH_BENCH_REPO="https://github.com/romkatv/zsh-bench"
 ZSH_BENCH_DIR="${ZSH_BENCH_DIR:-${RUNNER_TEMP:-${TMPDIR:-/tmp}}/zsh-bench}"
 BENCHMARK_RESULT="${BENCHMARK_RESULT:-/dev/stdout}"
 
+script -c "zsh -c 'echo test'"
+
 # Ensure git is installed
 if ! command -v git &>/dev/null; then
     echo "Error: git is not installed." >&2
