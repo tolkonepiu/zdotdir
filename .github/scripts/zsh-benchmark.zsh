@@ -29,8 +29,6 @@ if [ ! -d "$ZSH_BENCH_DIR" ]; then
         echo "Error: Failed to clone $ZSH_BENCH_REPO" >&2
         exit 1
     }
-    cd "$ZSH_BENCH_DIR"
-    git checkout "bd1b3979c726dbdc7d08d2b8745a44bda3d9e0a8"
     echo "Repository cloned successfully."
 else
     echo "zsh-bench repository already exists in $ZSH_BENCH_DIR. Skipping clone."
