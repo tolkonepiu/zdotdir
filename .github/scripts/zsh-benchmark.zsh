@@ -34,6 +34,8 @@ else
     echo "zsh-bench repository already exists in $ZSH_BENCH_DIR. Skipping clone."
 fi
 
+"$ZSH_BENCH_DIR/zsh-bench"
+
 # Run zsh-bench and process results
 echo "Running zsh-bench..."
 "$ZSH_BENCH_DIR/zsh-bench" |
