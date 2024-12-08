@@ -8,7 +8,7 @@ mattmc3/ez-compinit
 zsh-users/zsh-completions kind:fpath path:src conditional:not-warp
 
 # Prompt
-romkatv/powerlevel10k
+# romkatv/powerlevel10k
 
 # Aliases
 djui/alias-tips
