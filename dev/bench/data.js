@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733654965504,
+  "lastUpdate": 1733655168814,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -685,6 +685,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 55.795,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "563f1b65155cc2895eb96a4f942ed8be78e48eb3",
+          "message": "Optimize Zsh benchmark workflow by ignoring irrelevant paths",
+          "timestamp": "2024-12-08T18:50:52+08:00",
+          "tree_id": "a3b2017923a47eec8cecee938f0602904cb41fdb",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/563f1b65155cc2895eb96a4f942ed8be78e48eb3"
+        },
+        "date": 1733655167444,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.705,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 178.946,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 18.105,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 4.979,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 52.39,
             "unit": "ms"
           }
         ]
