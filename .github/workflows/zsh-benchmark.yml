@@ -62,6 +62,7 @@ jobs:
           zsh --version
           echo "SHELL is set to: $SHELL"
           echo "ZDOTDIR is set to: $ZDOTDIR"
+          zmodload -m | grep zsh
         shell: zsh -li --rcs {0}
 
       - name: 🚀 Run Zsh Benchmark
