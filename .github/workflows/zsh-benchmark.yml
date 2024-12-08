@@ -55,7 +55,7 @@ jobs:
           sudo chmod -R go-w /usr/share/zsh /usr/share/zsh/vendor-completions
 
       - name: 🏗️ Change default shell to Zsh
-        run: chsh -s $(which zsh) $(whoami)
+        run: sudo chsh -s $(which zsh) $(whoami)
 
       - name: 🏗️ Init Zsh environment
         run: |
