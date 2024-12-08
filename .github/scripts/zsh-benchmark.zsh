@@ -1,5 +1,5 @@
 #!/bin/zsh
-set -e
+set -ex
 
 ZSH_BENCH_REPO="https://github.com/romkatv/zsh-bench"
 ZSH_BENCH_DIR="${ZSH_BENCH_DIR:-${RUNNER_TEMP:-${TMPDIR:-/tmp}}/zsh-bench}"
@@ -35,7 +35,7 @@ if [ ! -d "$ZSH_BENCH_DIR" ]; then
 else
     echo "zsh-bench repository already exists in $ZSH_BENCH_DIR. Skipping clone."
 fi
-
+zmodload -m | grep zsh
 "$ZSH_BENCH_DIR/zsh-bench" -l no -i 1 -g no
 
 # Run zsh-bench and process results
