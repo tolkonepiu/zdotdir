@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733643346473,
+  "lastUpdate": 1733654442963,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -587,6 +587,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 56.11,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "46d75a432d25c89800f9ad0f20d853d29688ad8b",
+          "message": "Add conditional loading logic for plugins in zsh configuration",
+          "timestamp": "2024-12-08T18:38:17+08:00",
+          "tree_id": "72d1c3a9d52387f73f3164aea3ae803431649ef1",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/46d75a432d25c89800f9ad0f20d853d29688ad8b"
+        },
+        "date": 1733654441677,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.761,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 176.884,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 12.402,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.17,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 52.777,
             "unit": "ms"
           }
         ]
