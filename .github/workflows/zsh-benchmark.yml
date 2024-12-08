@@ -7,6 +7,7 @@ name: Zsh Benchmark
       - main
     paths-ignore:
       - .gitignore
+      - .editorconfig
       - .github/**
 
 permissions:
@@ -19,54 +20,36 @@ permissions:
 
 jobs:
   benchmark:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      max-parallel: 1
-      fail-fast: true
-      matrix:
-        include:
-          - os: macos-latest
-            name: macOS
-            install: |
-              brew update
-              brew install zsh
-          # - os: ubuntu-latest
-          #   name: Ubuntu
-          #   install: |
-          #     sudo apt update
-          #     sudo apt install -y zsh
+    runs-on: macos-latest
 
     steps:
-      - name: Checkout repository
+      - name: ⤵️ Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: ${{ matrix.install }}
-
-      - name: Set Zsh environment (ZDOTDIR)
+      - name: 🏗️ Set Zsh environment (ZDOTDIR)
         run: |
           ZDOTDIR=~/.config/zsh
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
-      - name: Init Zsh environment
+      - name: 🏗️ Init Zsh environment
         run: |
           echo "ZDOTDIR is set to: $ZDOTDIR"
         shell: zsh -li --rcs {0}
         env:
           TERM: screen-256color
 
-      - name: Run Zsh Benchmark
+      - name: 🚀 Run Zsh Benchmark
         run: zsh ./.github/scripts/zsh-benchmark.zsh
         shell: zsh -li --rcs {0}
         env:
           BENCHMARK_RESULT: benchmark-result.json
           TERM: screen-256color
 
-      - name: Upload Benchmark Results
+      - name: 📥 Upload Benchmark Results
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: ${{ matrix.name }}
+          name: ${{ runner.os }}
           tool: customSmallerIsBetter
           output-file-path: benchmark-result.json
           github-token: ${{ secrets.GITHUB_TOKEN }}
