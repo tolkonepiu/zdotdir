@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733655168814,
+  "lastUpdate": 1733664342861,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -734,6 +734,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 52.39,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "04a4593e2a600591c0d2ca8fafbabf1243792234",
+          "message": "Add editorconfig and GitHub Actions linters, update YAML linting rules (#6)\n\n* Add editorconfig and GitHub Actions linters, update YAML linting rules\n\n* Fix lint errors\n\n* Update GitHub Actions workflows and .zshrc indentation\n\n* Removed the `-ci` flag from `shfmt_flags`\n\n* Add shellcheck configuration for zsh\n\n* Removed the ShellCheck job from the GitHub Actions workflow",
+          "timestamp": "2024-12-08T21:24:24+08:00",
+          "tree_id": "adcf7f7487021f583a535a9ad21a1a8d37554652",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/04a4593e2a600591c0d2ca8fafbabf1243792234"
+        },
+        "date": 1733664341571,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.769,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 177.652,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 17.861,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.012,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 52.911,
             "unit": "ms"
           }
         ]
