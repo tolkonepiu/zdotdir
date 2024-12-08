@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733642059095,
+  "lastUpdate": 1733643346473,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -538,6 +538,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.28,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "3508beb93a24ee30b2363e3df8397f94cd489cb1",
+          "message": "Update .zsh_plugins.txt to add new zsh-plugins\n\n- Added `zsh-users/zsh-completions` to improve shell completions. This plugin is set with `kind:fpath` and a `path:src` to correctly locate and use completions scripts.\n- Introduced three plugins for enhancing ZSH functionality with fish-like features:\n  - `zdharma-continuum/fast-syntax-highlighting` for on-the-fly command syntax highlighting.\n  - `zsh-users/zsh-autosuggestions` to provide command suggestions based on command history.\n  - `zsh-users/zsh-history-substring-search` allows using Up/Down keys to search through the command history based on the substring entered.",
+          "timestamp": "2024-12-08T15:33:47+08:00",
+          "tree_id": "9fef8e96d55908a6317d34c5a99ea1b12722ff0b",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/3508beb93a24ee30b2363e3df8397f94cd489cb1"
+        },
+        "date": 1733643345149,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.578,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 193.165,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 18.267,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.805,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 56.11,
             "unit": "ms"
           }
         ]
