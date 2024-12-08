@@ -76,7 +76,12 @@ jobs:
           fi
           zmodload -m | grep zsh
           script --version
-          script -c "zsh -c 'echo test'"
+          script -c "zsh -c 'echo test1'"
+          script -c 'zsh -ic "echo test2 && sleep 1"'
+          zsh -i -c 'echo test3'
+          touch /tmp/test-file
+          echo "test4" > /tmp/test-file
+          cat /tmp/test-file
         shell: zsh -li --rcs {0}
 
       - name: 🚀 Run Zsh Benchmark
