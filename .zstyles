@@ -2,3 +2,7 @@
 #
 # .zstyles - Set zstyle settings for plugins that need them.
 #
+
+# ez-compinit
+zstyle ':plugin:ez-compinit' 'compstyle' 'zshzoo'
+zstyle ':plugin:ez-compinit' 'use-cache' 'yes'
