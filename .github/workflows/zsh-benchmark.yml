@@ -6,8 +6,8 @@ on:
     branches:
       - main
     paths-ignore:
-      - .gitignore
-      - .github/
+      - ".gitignore"
+      - ".github/**"
 
 permissions:
   # Required to post benchmark results as comments on pull requests
