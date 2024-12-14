@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733692479164,
+  "lastUpdate": 1734170130164,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -881,6 +881,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 52.584,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "446a0bc317c52f8d7a37a070a761522336fd52a1",
+          "message": "Add ```tolkonepiu/catppuccin-powerlevel10k-themes``` themes",
+          "timestamp": "2024-12-14T17:54:10+08:00",
+          "tree_id": "a004b65990d6a3042c0cf73dbfef4ec925907576",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/446a0bc317c52f8d7a37a070a761522336fd52a1"
+        },
+        "date": 1734170128848,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.098,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 177.57,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.838,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.261,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 56.959,
             "unit": "ms"
           }
         ]
