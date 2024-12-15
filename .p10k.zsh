@@ -1,1 +1,1 @@
-apply_catppuccin lean mocha
+apply_catppuccin rainbow mocha
