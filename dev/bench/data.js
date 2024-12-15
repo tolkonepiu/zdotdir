@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734170130164,
+  "lastUpdate": 1734260062137,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -930,6 +930,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 56.959,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "35cad7746df45d12a5c6d069c8bc995dff96f95a",
+          "message": "Switch to rainbow theme",
+          "timestamp": "2024-12-15T18:52:57+08:00",
+          "tree_id": "79ee04372c627c717a659cf768e355be00a6a407",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/35cad7746df45d12a5c6d069c8bc995dff96f95a"
+        },
+        "date": 1734260060741,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.283,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 182.745,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 28.208,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.356,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 57.872,
             "unit": "ms"
           }
         ]
