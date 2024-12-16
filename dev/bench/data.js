@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734260844982,
+  "lastUpdate": 1734363548579,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1028,6 +1028,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 66.323,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "937b22180c2af34c6d2d4c08430b869f1eec8108",
+          "message": "Add key bindings for history substring search in zsh",
+          "timestamp": "2024-12-16T23:37:33+08:00",
+          "tree_id": "333b4a3368eb204bf8b521cf3dc6ad9fdfe90118",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/937b22180c2af34c6d2d4c08430b869f1eec8108"
+        },
+        "date": 1734363547090,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.162,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 185.041,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 26.625,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.347,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 64.972,
             "unit": "ms"
           }
         ]
