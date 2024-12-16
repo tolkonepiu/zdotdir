@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734363548579,
+  "lastUpdate": 1734364013181,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1077,6 +1077,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 64.972,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "9415fade9ff92ec78d94589790c6da4a00288b72",
+          "message": "- Added `ohmyzsh/ohmyzsh path:plugins/kubectl` under the Aliases section in `.zsh_plugins.txt`\n- The addition of this plugin will enhance command-line productivity by providing alias features for kubectl commands.\n\nAdd kubectl aliases from ohmyzsh",
+          "timestamp": "2024-12-16T23:44:52+08:00",
+          "tree_id": "d4250c7369b2bb50088884bdfb5260817e30ab2e",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/9415fade9ff92ec78d94589790c6da4a00288b72"
+        },
+        "date": 1734364012281,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.192,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 184.422,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 25.296,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.403,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 61.571,
             "unit": "ms"
           }
         ]
