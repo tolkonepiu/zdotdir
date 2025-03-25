@@ -14,6 +14,7 @@ tolkonepiu/catppuccin-powerlevel10k-themes
 # Aliases
 djui/alias-tips
 ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/autojump
 
 # Utilities
 romkatv/zsh-bench kind:path

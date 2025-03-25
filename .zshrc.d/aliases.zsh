@@ -18,6 +18,7 @@ alias glg='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgree
 
 # fix common typos
 alias quit='exit'
+alias pass='gopass'
 
 # find
 alias fd='find . -type d -name'
