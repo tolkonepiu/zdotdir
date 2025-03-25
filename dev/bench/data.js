@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734364013181,
+  "lastUpdate": 1742903870645,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1126,6 +1126,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 61.571,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "a885c812fbdc8cf84dbceb3459e270f267253490",
+          "message": "Update zsh configuration for plugin extension and alias addition\n\n- Added the `autojump` plugin to `.zsh_plugins.txt` to enhance navigation capabilities in the shell environment by allowing quick directory jumping.\n- Introduced a new alias `pass` in `.zshrc.d/aliases.zsh`, mapped to `gopass`, which simplifies the command for accessing the password manager.",
+          "timestamp": "2025-03-25T19:56:03+08:00",
+          "tree_id": "cd418ea5dded70cd470238d54a8451d5d713fc16",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/a885c812fbdc8cf84dbceb3459e270f267253490"
+        },
+        "date": 1742903869138,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.926,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 186.966,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 27.64,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.3,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 73.753,
             "unit": "ms"
           }
         ]
