@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743368004680,
+  "lastUpdate": 1743369026868,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1224,6 +1224,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 41.228,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "popoffpavel@yandex.ru",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "a632054b75fee8cc5f25c6c412e2857112c8f751",
+          "message": "Add Antidote plugin sourcing to zdotdir function in zsh config",
+          "timestamp": "2025-03-31T05:08:51+08:00",
+          "tree_id": "93b3595f592f12650a68c2674b8ca9c94cea6472",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/a632054b75fee8cc5f25c6c412e2857112c8f751"
+        },
+        "date": 1743369025562,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.818,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 99.056,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 25.405,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.151,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.977,
             "unit": "ms"
           }
         ]
