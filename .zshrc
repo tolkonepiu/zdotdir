@@ -10,25 +10,36 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# ZSH_CONFIG_DIR - The directory containing Zsh configuration files and plugins.
+# This variable allows managing configurations and plugins from a custom directory.
+# If not set, it defaults to $ZDOTDIR or $HOME.
+export ZSH_CONFIG_DIR="${ZSH_CONFIG_DIR:-${ZDOTDIR:-$HOME}}"
+
 # Lazy-load (autoload) Zsh function files from a directory.
-ZFUNCDIR=${ZDOTDIR:-$HOME}/.zfunctions
+ZFUNCDIR=${ZSH_CONFIG_DIR}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
 autoload -Uz $ZFUNCDIR/*(.:t)
 
 # Set any zstyles you might use for configuration.
-[[ ! -f ${ZDOTDIR:-$HOME}/.zstyles ]] || source ${ZDOTDIR:-$HOME}/.zstyles
+[[ ! -f ${ZSH_CONFIG_DIR}/.zstyles ]] || source ${ZSH_CONFIG_DIR}/.zstyles
 
-# Clone antidote if necessary.
-if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
-    git clone https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
+# Lazy-load antidote and generate the static load file only when needed
+if [[ ! ${ZDOTDIR:-$HOME}/.zsh_plugins.zsh -nt ${ZSH_CONFIG_DIR}/.zsh_plugins.txt ]]; then
+    (
+        # Clone and initialize Antidote only if not already present.
+        if ! command -v antidote >/dev/null || [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
+            if [[ ! -d ${ZDOTDIR:-$HOME}/.antidote ]]; then
+                git clone https://github.com/mattmc3/antidote ${ZDOTDIR:-$HOME}/.antidote
+            fi
+            source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+        fi
+        antidote bundle <${ZSH_CONFIG_DIR}/.zsh_plugins.txt >${ZDOTDIR:-$HOME}/.zsh_plugins.zsh
+    )
 fi
-
-# Init antidote
-source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
-antidote load
+source ${ZDOTDIR:-$HOME}/.zsh_plugins.zsh
 
 # Source anything in .zshrc.d.
-for _rc in ${ZDOTDIR:-$HOME}/.zshrc.d/*.zsh; do
+for _rc in ${ZSH_CONFIG_DIR}/.zshrc.d/*.zsh; do
     # Ignore tilde files.
     if [[ $_rc:t != '~'* ]]; then
         source "$_rc"
@@ -37,4 +48,4 @@ done
 unset _rc
 
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
-[[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
+[[ ! -f ${ZSH_CONFIG_DIR}/.p10k.zsh ]] || source ${ZSH_CONFIG_DIR}/.p10k.zsh
