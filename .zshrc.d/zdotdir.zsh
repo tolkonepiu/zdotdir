@@ -27,6 +27,9 @@ zdotdir() {
             return 1
         }
 
+        # Source Antidote if it's installed in $ZDOTDIR or $HOME; otherwise, skip loading.
+        [[ ! -f ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh ]] || source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+
         # Check if antidote is installed
         if command -v antidote >/dev/null; then
             echo "Updating antidote bundles..."
