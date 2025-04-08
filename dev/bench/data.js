@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1743369026868,
+  "lastUpdate": 1744095735611,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1273,6 +1273,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 40.977,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "be0b874da9b30c30aa20cc3fc77b1f93b7493c65",
+          "message": "Add ANTIDOTE_* variables for Antidote",
+          "timestamp": "2025-04-08T14:00:49+07:00",
+          "tree_id": "7a4dcde347c9b482ca0a305efe29c06d4bafbdcf",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/be0b874da9b30c30aa20cc3fc77b1f93b7493c65"
+        },
+        "date": 1744095734064,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.811,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 96.027,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 27.878,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.227,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.409,
             "unit": "ms"
           }
         ]
