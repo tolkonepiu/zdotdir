@@ -10,22 +10,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# ZSH_CONFIG_PATH - The directory containing Zsh configuration files and plugins.
-# This variable allows managing configurations and plugins from a custom directory.
-# If not set, it defaults to $ZDOTDIR or $HOME.
-export ZSH_CONFIG_PATH="${ZSH_CONFIG_PATH:-${ZDOTDIR:-$HOME}}"
-
-# ANTIDOTE_PATH - The directory where Antidote is installed. If not set, defaults to $ZDOTDIR/.antidote or $HOME/.antidote.
-export ANTIDOTE_PATH="${ANTIDOTE_PATH:-${ZDOTDIR:-$HOME}/.antidote}"
-
-# ANTIDOTE_BUNDLE_FILE - The file listing the plugins to be loaded by Antidote.
-# Defaults to .zsh_plugins.txt in the Zsh configuration directory.
-export ANTIDOTE_BUNDLE_FILE="${ANTIDOTE_BUNDLE_FILE:-${ZSH_CONFIG_PATH}/.zsh_plugins.txt}"
-
-# ANTIDOTE_STATIC_FILE - The file where Antidote compiles all plugins for static loading.
-# Defaults to .zsh_plugins.zsh in the Zsh configuration directory.
-export ANTIDOTE_STATIC_FILE="${ANTIDOTE_STATIC_FILE:-${ZDOTDIR:-$HOME}/.zsh_plugins.zsh}"
-
 # Lazy-load (autoload) Zsh function files from a directory.
 ZFUNCDIR=${ZSH_CONFIG_PATH}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
