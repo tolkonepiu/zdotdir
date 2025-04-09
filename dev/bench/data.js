@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744095735611,
+  "lastUpdate": 1744182014449,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1322,6 +1322,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 40.409,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "938e9939618c75fc0c3eae41d4d319933f4a7f53",
+          "message": "Move envs from ```.zshrc``` to ```.zshenv```",
+          "timestamp": "2025-04-09T13:58:36+07:00",
+          "tree_id": "1e4e0fbd7935c5274a1d743c52ace1d4430f55a8",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/938e9939618c75fc0c3eae41d4d319933f4a7f53"
+        },
+        "date": 1744182013073,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 16.931,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 126.712,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 27.124,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.48,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 54.19,
             "unit": "ms"
           }
         ]
