@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744182014449,
+  "lastUpdate": 1744182135469,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1371,6 +1371,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 54.19,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "c0401c8c491f1fe6b788d83f312bd2f28f0e501e",
+          "message": "Add SKIP_UPDATE parameters in zdotdir function",
+          "timestamp": "2025-04-09T14:00:43+07:00",
+          "tree_id": "212ccc41c9349aecf65fe573c131b94fa72d64ca",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c0401c8c491f1fe6b788d83f312bd2f28f0e501e"
+        },
+        "date": 1744182134124,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.649,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 93.993,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 28.436,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.206,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.746,
             "unit": "ms"
           }
         ]
