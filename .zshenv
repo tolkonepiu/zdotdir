@@ -23,11 +23,6 @@ export ANTIDOTE_PATH="${ANTIDOTE_PATH:-${ZDOTDIR}/.antidote}"
 # Defaults to .zsh_plugins.txt in the Zsh configuration directory.
 export ANTIDOTE_BUNDLE_FILE="${ANTIDOTE_BUNDLE_FILE:-${ZSH_CONFIG_PATH}/.zsh_plugins.txt}"
 
-# ANTIDOTE_BUNDLE_CACHE - A cache file storing the last known state of the Antidote bundle file.
-# Used to detect changes in the plugin list when ANTIDOTE_BUNDLE_FILE is in a read-only location.
-# Defaults to $XDG_CACHE_HOME/antidote_bundle_cache.
-export ANTIDOTE_BUNDLE_CACHE="${ANTIDOTE_BUNDLE_CACHE:-${XDG_CACHE_HOME}/antidote_bundle_cache}"
-
 # ANTIDOTE_STATIC_FILE - The file where Antidote compiles all plugins for static loading.
 # Defaults to .zsh_plugins.zsh in the Zsh configuration directory.
 export ANTIDOTE_STATIC_FILE="${ANTIDOTE_STATIC_FILE:-${ZDOTDIR}/.zsh_plugins.zsh}"

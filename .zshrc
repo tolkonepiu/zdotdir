@@ -19,7 +19,7 @@ autoload -Uz $ZFUNCDIR/*(.:t)
 [[ ! -f ${ZSH_CONFIG_PATH}/.zstyles ]] || source ${ZSH_CONFIG_PATH}/.zstyles
 
 # Lazy-load antidote and generate the static load file only when needed
-if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! -f "${ANTIDOTE_BUNDLE_CACHE}" || ! $(cmp -s "${ANTIDOTE_BUNDLE_FILE}" "${ANTIDOTE_BUNDLE_CACHE}") ]]; then
+if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! ${ANTIDOTE_STATIC_FILE} -nt ${ANTIDOTE_BUNDLE_FILE} ]]; then
     (
         # Clone and initialize Antidote only if not already present.
         if ! command -v antidote >/dev/null; then
@@ -29,7 +29,6 @@ if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! -f "${ANTIDOTE_BUNDLE_CACHE}" || ! $(c
             source ${ANTIDOTE_PATH}/antidote.zsh
         fi
         antidote bundle <${ANTIDOTE_BUNDLE_FILE} >${ANTIDOTE_STATIC_FILE}
-        cp -f "${ANTIDOTE_BUNDLE_FILE}" "${ANTIDOTE_BUNDLE_CACHE}"
     )
 fi
 source ${ANTIDOTE_STATIC_FILE}
