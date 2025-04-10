@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744273067547,
+  "lastUpdate": 1744273412843,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1616,6 +1616,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 435.278,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "a67aaa9b27e74281d35c70630f9e62599cfc4c1c",
+          "message": "Change antidote bundle cache file location",
+          "timestamp": "2025-04-10T15:21:47+07:00",
+          "tree_id": "66cf161e97e25c32251050493cfc17f20778124f",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/a67aaa9b27e74281d35c70630f9e62599cfc4c1c"
+        },
+        "date": 1744273411909,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.16,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 382.689,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 30.697,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.565,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 361.623,
             "unit": "ms"
           }
         ]
