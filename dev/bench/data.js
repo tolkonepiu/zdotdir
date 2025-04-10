@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744268798191,
+  "lastUpdate": 1744269234888,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1469,6 +1469,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 21.74,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "b68298eb49db92b967244bc5fe0824762eec3d39",
+          "message": "Disable defer loading for git, kubectl and brew",
+          "timestamp": "2025-04-10T14:12:20+07:00",
+          "tree_id": "f276e8a48814a54ebf77d9bb1685bc8e0d1418c2",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/b68298eb49db92b967244bc5fe0824762eec3d39"
+        },
+        "date": 1744269233449,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.46,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 85.492,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 29.572,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.36,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.579,
             "unit": "ms"
           }
         ]
