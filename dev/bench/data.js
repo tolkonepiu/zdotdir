@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744275454395,
+  "lastUpdate": 1744295716545,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1763,6 +1763,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 405.142,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "6a3d3ca452ebabf6c13357cec16e02bb40e6ad10",
+          "message": "Revert antidote loading logic",
+          "timestamp": "2025-04-10T21:33:52+07:00",
+          "tree_id": "8233fb32ec5b1d985cf03f6555a554a73d128765",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/6a3d3ca452ebabf6c13357cec16e02bb40e6ad10"
+        },
+        "date": 1744295715174,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.638,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 84.869,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 27.72,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.279,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.916,
             "unit": "ms"
           }
         ]
