@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744273412843,
+  "lastUpdate": 1744274787436,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1665,6 +1665,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 361.623,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "58da442844edf0b313c02baa4b12b7ba85b9d39a",
+          "message": "Doc spell fixes",
+          "timestamp": "2025-04-10T15:41:02+07:00",
+          "tree_id": "472bccd31b96dcd1ec9c5b77e5894a5d53ba3832",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/58da442844edf0b313c02baa4b12b7ba85b9d39a"
+        },
+        "date": 1744274785885,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.524,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 399.762,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 29.052,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.675,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 415.84,
             "unit": "ms"
           }
         ]
