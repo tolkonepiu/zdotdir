@@ -29,7 +29,7 @@ if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! -f "${ANTIDOTE_BUNDLE_CACHE}" || ! $(c
             source ${ANTIDOTE_PATH}/antidote.zsh
         fi
         antidote bundle <${ANTIDOTE_BUNDLE_FILE} >${ANTIDOTE_STATIC_FILE}
-        cp "${ANTIDOTE_BUNDLE_FILE}" "${ANTIDOTE_BUNDLE_CACHE}"
+        cp -f "${ANTIDOTE_BUNDLE_FILE}" "${ANTIDOTE_BUNDLE_CACHE}"
     )
 fi
 source ${ANTIDOTE_STATIC_FILE}
