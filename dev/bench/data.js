@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744269234888,
+  "lastUpdate": 1744272844002,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1518,6 +1518,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.579,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "76055feebad6a184f72f192fa0f8ba75fe946074",
+          "message": "Fix antidote lazy loading in Nix enviroment",
+          "timestamp": "2025-04-10T15:12:07+07:00",
+          "tree_id": "af24574a60ee7141e5073bd76adb7f30167669b2",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/76055feebad6a184f72f192fa0f8ba75fe946074"
+        },
+        "date": 1744272842653,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.232,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 359.516,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 26.103,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.258,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 360.199,
             "unit": "ms"
           }
         ]
