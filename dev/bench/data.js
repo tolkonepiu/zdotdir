@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744274787436,
+  "lastUpdate": 1744275454395,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1714,6 +1714,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 415.84,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "38e34cdf7161a60e8b48752eb0656a54c4206c00",
+          "message": "Add omz aliases plugin",
+          "timestamp": "2025-04-10T15:56:04+07:00",
+          "tree_id": "d033c3ec84ff2ed1a373774c1bf6eeb847501946",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/38e34cdf7161a60e8b48752eb0656a54c4206c00"
+        },
+        "date": 1744275453077,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.554,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 384.892,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 26.829,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.707,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 405.142,
             "unit": "ms"
           }
         ]
