@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1744272844002,
+  "lastUpdate": 1744273067547,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1567,6 +1567,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 360.199,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "f17d83ca9164d1f17589c57c8c35e0e704acef39",
+          "message": "Fix ANTIDOTE_BUNDLE_CACHE env",
+          "timestamp": "2025-04-10T15:16:14+07:00",
+          "tree_id": "e4f89598fb9c778278c1e75f0e7546007eaedf38",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/f17d83ca9164d1f17589c57c8c35e0e704acef39"
+        },
+        "date": 1744273066211,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 16.08,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 439.4,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 29.438,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.712,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 435.278,
             "unit": "ms"
           }
         ]
