@@ -6,3 +6,9 @@
 # ez-compinit
 zstyle ':plugin:ez-compinit' 'compstyle' 'zshzoo'
 zstyle ':plugin:ez-compinit' 'use-cache' 'yes'
+
+# Set theme and flavor
+# For detailed configuration options, see:
+# https://github.com/tolkonepiu/catppuccin-powerlevel10k-themes?tab=readme-ov-file#2-using-zstyle-configuration-recommended
+zstyle ':catppuccin:p10k' 'theme' 'lean'
+zstyle ':catppuccin:p10k' 'flavour' 'mocha'
