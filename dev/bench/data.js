@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749631553590,
+  "lastUpdate": 1749640666840,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2008,6 +2008,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 35.746,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "5d9cea98f8d85dbb1f4f3a159902bc9e3e3adaf9",
+          "message": "Fix naming for tools",
+          "timestamp": "2025-06-11T19:16:31+08:00",
+          "tree_id": "71b70aa022a75343ea7afc4fd0d38de9ddd280cf",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/5d9cea98f8d85dbb1f4f3a159902bc9e3e3adaf9"
+        },
+        "date": 1749640665537,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.392,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 79.295,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 22.8,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.462,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 37.362,
             "unit": "ms"
           }
         ]
