@@ -13,8 +13,12 @@ alias la='ls -lAh'
 
 # fix common typos
 alias quit='exit'
-alias pass='gopass'
 
 # find
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
+
+# Use zoxide instead of cd if it's installed
+if has-zoxide; then
+    alias cd="z"
+fi

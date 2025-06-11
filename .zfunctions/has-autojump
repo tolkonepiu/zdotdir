@@ -1,0 +1,2 @@
+#!/bin/zsh
+[[ -n $(command -v j 2>/dev/null) ]]
