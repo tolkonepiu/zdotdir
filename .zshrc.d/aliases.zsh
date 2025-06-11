@@ -26,3 +26,8 @@ fi
 if has-zoxide; then
     alias cd="z"
 fi
+
+# Use bat instead of cat if it's installed
+if command -v bat >/dev/null 2>&1; then
+    alias cat="bat"
+fi
