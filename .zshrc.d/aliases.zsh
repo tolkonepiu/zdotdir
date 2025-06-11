@@ -17,7 +17,7 @@ alias quit='exit'
 # find - use fd utility if available, otherwise fallback to find aliases
 if command -v fd >/dev/null 2>&1; then
     alias ff='fd -t file'
-elif
+else
     alias fd='find . -type d -name'
     alias ff='find . -type f -name'
 fi
