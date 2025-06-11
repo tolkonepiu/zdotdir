@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1746497682477,
+  "lastUpdate": 1749630558570,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1861,6 +1861,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 31.967,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "465718807a09dfe83593d023dc4dd2728ce60dee",
+          "message": "Add conditional cd alias for zoxide and zoxide zsh integration",
+          "timestamp": "2025-06-11T16:26:42+08:00",
+          "tree_id": "e390411d89f00a31c4283e693ed8c83f300a27fd",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/465718807a09dfe83593d023dc4dd2728ce60dee"
+        },
+        "date": 1749630557295,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.055,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 83.682,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 17.994,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.349,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 37.115,
             "unit": "ms"
           }
         ]
