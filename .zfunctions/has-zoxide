@@ -1,2 +1,2 @@
 #!/bin/zsh
-[[ -n $(command -v z 2>/dev/null) ]]
+[[ -n $(command -v zoxide 2>/dev/null) ]]

@@ -1,2 +1,2 @@
 #!/bin/zsh
-[[ -n $(command -v j 2>/dev/null) ]]
+[[ -n $(command -v autojump 2>/dev/null) ]]
