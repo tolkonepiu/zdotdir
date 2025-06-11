@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749640666840,
+  "lastUpdate": 1749647500443,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2057,6 +2057,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 37.362,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "b60de80d59e2f95dd07ba6c624125e1a80d2700f",
+          "message": "Add bat alias",
+          "timestamp": "2025-06-11T21:10:23+08:00",
+          "tree_id": "55998c061230d84e2b3f306bdebe528f55e5153f",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/b60de80d59e2f95dd07ba6c624125e1a80d2700f"
+        },
+        "date": 1749647499088,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.852,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 97.959,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 18.339,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.447,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 34.598,
             "unit": "ms"
           }
         ]
