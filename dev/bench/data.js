@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749630558570,
+  "lastUpdate": 1749631104216,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -1910,6 +1910,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 37.115,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "96d186f64bd18f2b9da08d058558169227e6e671",
+          "message": "Improve find aliases with fd utility integration",
+          "timestamp": "2025-06-11T16:37:12+08:00",
+          "tree_id": "d9f2b3cad746647edad421de8fb5d91836b008dd",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/96d186f64bd18f2b9da08d058558169227e6e671"
+        },
+        "date": 1749631102868,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.687,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 88.243,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 19.28,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.452,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 33.99,
             "unit": "ms"
           }
         ]
