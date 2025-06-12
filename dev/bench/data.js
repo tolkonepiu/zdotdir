@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749734740974,
+  "lastUpdate": 1749744373361,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2155,6 +2155,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.48,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "167ca95e1d2821f27c6b428f88943bd4291bbf31",
+          "message": "Use ZOXIDE_CMD_OVERRIDE instead of alias",
+          "timestamp": "2025-06-13T00:04:52+08:00",
+          "tree_id": "6ce4f232aaf05b17d2e8c951f2c49547be2e4f35",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/167ca95e1d2821f27c6b428f88943bd4291bbf31"
+        },
+        "date": 1749744371945,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.495,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 82.893,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 16.226,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.486,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 35.666,
             "unit": "ms"
           }
         ]
