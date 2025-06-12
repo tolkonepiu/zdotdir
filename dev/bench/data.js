@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749647500443,
+  "lastUpdate": 1749734740974,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2106,6 +2106,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 34.598,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "b285e2d9eb5b38b90c57a3e2bb5a8060ce9030a5",
+          "message": "Remove autojump integration, add aliases for eza",
+          "timestamp": "2025-06-12T21:23:52+08:00",
+          "tree_id": "446c34099b5c001a28304d4d4ce519a380f893a3",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/b285e2d9eb5b38b90c57a3e2bb5a8060ce9030a5"
+        },
+        "date": 1749734739554,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 14.45,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 99.774,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 17.051,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.343,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.48,
             "unit": "ms"
           }
         ]
