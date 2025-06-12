@@ -7,9 +7,17 @@
 alias vi=vim
 
 # more ways to ls
-alias ls='ls --color=auto'
-alias ll='ls -lh'
-alias la='ls -lAh'
+if command -v eza >/dev/null 2>&1; then
+    alias la='eza -a'
+    alias ll='eza -l'
+    alias lla='eza -la'
+    alias ls=eza
+    alias lt='eza --tree'
+else
+    alias ls='ls --color=auto'
+    alias ll='ls -lh'
+    alias la='ls -lAh'
+fi
 
 # fix common typos
 alias quit='exit'
