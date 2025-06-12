@@ -30,11 +30,6 @@ else
     alias ff='find . -type f -name'
 fi
 
-# Use zoxide instead of cd if it's installed
-if has-zoxide; then
-    alias cd="z"
-fi
-
 # Use bat instead of cat if it's installed
 if command -v bat >/dev/null 2>&1; then
     alias cat="bat"

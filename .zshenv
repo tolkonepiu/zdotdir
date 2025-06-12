@@ -27,6 +27,9 @@ export ANTIDOTE_BUNDLE_FILE="${ANTIDOTE_BUNDLE_FILE:-${ZSH_CONFIG_PATH}/.zsh_plu
 # Defaults to .zsh_plugins.zsh in the Zsh configuration directory.
 export ANTIDOTE_STATIC_FILE="${ANTIDOTE_STATIC_FILE:-${ZDOTDIR}/.zsh_plugins.zsh}"
 
+# ZOXIDE_CMD_OVERRIDE - Override the default command that zoxide uses.
+export ZOXIDE_CMD_OVERRIDE="${ZOXIDE_CMD_OVERRIDE:-cd}"
+
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
 
