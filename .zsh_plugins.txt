@@ -25,6 +25,6 @@ tolkonepiu/wakatime-zsh-plugin kind:defer conditional:has-wakatime
 zshzoo/macos kind:defer conditional:is-macos
 
 # Fish-like features
-zsh-users/zsh-syntax-highlighting kind:defer                           # Syntax highlighting
+zdharma-continuum/fast-syntax-highlighting kind:defer                  # Syntax highlighting
 zsh-users/zsh-autosuggestions kind:defer conditional:not-warp          # Auto-suggestions
 zsh-users/zsh-history-substring-search kind:defer conditional:not-warp # Up/Down to search history
