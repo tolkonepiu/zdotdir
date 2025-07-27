@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753637286701,
+  "lastUpdate": 1753637631116,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2253,6 +2253,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 33.284,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "324fbd4da04e4ab9fc9aec81b784d0db470779d8",
+          "message": "And return back to zdharma-continuum/fast-syntax-highlighting",
+          "timestamp": "2025-07-28T01:32:34+08:00",
+          "tree_id": "6ce4f232aaf05b17d2e8c951f2c49547be2e4f35",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/324fbd4da04e4ab9fc9aec81b784d0db470779d8"
+        },
+        "date": 1753637630117,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.801,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 81.095,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 22.468,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.146,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.909,
             "unit": "ms"
           }
         ]
