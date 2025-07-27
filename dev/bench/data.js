@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749744373361,
+  "lastUpdate": 1753637286701,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2204,6 +2204,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 35.666,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "f8ac38d79fa5572a949c34dd36e7f6d49a6c24c8",
+          "message": "Switch to zsh-users/zsh-syntax-highlighting",
+          "timestamp": "2025-07-28T01:26:38+08:00",
+          "tree_id": "a749ea56df634121dfa61fc357007f86a88d9f60",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/f8ac38d79fa5572a949c34dd36e7f6d49a6c24c8"
+        },
+        "date": 1753637285321,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.782,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 84.088,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.16,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 12.314,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 33.284,
             "unit": "ms"
           }
         ]
