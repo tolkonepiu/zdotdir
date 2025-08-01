@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1753637631116,
+  "lastUpdate": 1754069915364,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2302,6 +2302,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.909,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "8e1584c53d50df6c9125ac28fe1a3afa12f1f883",
+          "message": "Add vscode-shell-integration zsh plugin",
+          "timestamp": "2025-08-02T01:36:51+08:00",
+          "tree_id": "7f15f5bfe0ccee783e54529c75f719e289e93d43",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/8e1584c53d50df6c9125ac28fe1a3afa12f1f883"
+        },
+        "date": 1754069913995,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.048,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 80.168,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 17.602,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.196,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 35.37,
             "unit": "ms"
           }
         ]
