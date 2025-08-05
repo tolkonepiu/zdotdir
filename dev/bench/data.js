@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754419955383,
+  "lastUpdate": 1754420951113,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2792,6 +2792,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 26.553,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "ffdea9f594f60431c4195a0b5feba090ec138e3c",
+          "message": "Revert \"feat: improve zsh configuration structure and aliases\"\n\nThis reverts commit 43d3954dfde938399a83f0149d3aa7e12d87dc5b.",
+          "timestamp": "2025-08-06T03:07:30+08:00",
+          "tree_id": "6cdbe43cb4326db61bee7e24888d128ca38cf508",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/ffdea9f594f60431c4195a0b5feba090ec138e3c"
+        },
+        "date": 1754420950078,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.405,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 103.484,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 16.755,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.084,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 42.455,
             "unit": "ms"
           }
         ]
