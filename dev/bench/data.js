@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754420951113,
+  "lastUpdate": 1754421512078,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2841,6 +2841,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 42.455,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "915985b8ec65ac8ea6df3dedc9ee00961da5cbfd",
+          "message": "Optimize plugin loading and improve aliases",
+          "timestamp": "2025-08-06T03:17:17+08:00",
+          "tree_id": "029c1c4177bca54968e1997ee010847465492884",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/915985b8ec65ac8ea6df3dedc9ee00961da5cbfd"
+        },
+        "date": 1754421511100,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.31,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 70.457,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.38,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.286,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 23.347,
             "unit": "ms"
           }
         ]
