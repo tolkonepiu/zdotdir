@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754069915364,
+  "lastUpdate": 1754398485115,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2351,6 +2351,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 35.37,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "43a880b86d9e79727df0827be91e12701e6eabe3",
+          "message": "Add tailscale ohmyzsh plugin",
+          "timestamp": "2025-08-05T20:53:22+08:00",
+          "tree_id": "141a812e0d044debb4b8b65712bbb85a2329b638",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/43a880b86d9e79727df0827be91e12701e6eabe3"
+        },
+        "date": 1754398484244,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.378,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 78.92,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.213,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.047,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.66,
             "unit": "ms"
           }
         ]
