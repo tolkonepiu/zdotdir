@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754419616777,
+  "lastUpdate": 1754419834651,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2694,6 +2694,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 71.98,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "57386c96adc13b70058ec19ff8211d4cddabfb01",
+          "message": "Remove tailscale plugin",
+          "timestamp": "2025-08-06T02:48:50+08:00",
+          "tree_id": "99221e47417bd77486772dd78c9722dd55247c63",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/57386c96adc13b70058ec19ff8211d4cddabfb01"
+        },
+        "date": 1754419833683,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.73,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 471.137,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 56.129,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.502,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 73.35,
             "unit": "ms"
           }
         ]
