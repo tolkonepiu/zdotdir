@@ -15,6 +15,9 @@ ZFUNCDIR=${ZSH_CONFIG_PATH}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
 autoload -Uz $ZFUNCDIR/*(.:t)
 
+# Load completions from zsh cache directory
+fpath=("$ZSH_CACHE_DIR/completions" $fpath)
+
 # Set any zstyles you might use for configuration.
 [[ ! -f ${ZSH_CONFIG_PATH}/.zstyles ]] || source ${ZSH_CONFIG_PATH}/.zstyles
 
