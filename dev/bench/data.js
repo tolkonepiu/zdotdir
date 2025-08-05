@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754401542169,
+  "lastUpdate": 1754403198277,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2498,6 +2498,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.915,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "472af88d238cbee3ae6787bfa3675f7af4b4f9bb",
+          "message": "Switch from `command -v` to `$+commands`, remove `not-warp` condition, add `zoxide` initialization",
+          "timestamp": "2025-08-05T22:10:41+08:00",
+          "tree_id": "97585038df5a1a7bf1cac88c8f19a5e218e24be9",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/472af88d238cbee3ae6787bfa3675f7af4b4f9bb"
+        },
+        "date": 1754403197338,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 13.762,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 83.148,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 6.779,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 4.129,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 33.494,
             "unit": "ms"
           }
         ]
