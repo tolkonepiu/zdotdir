@@ -11,9 +11,6 @@ zsh-users/zsh-completions kind:fpath path:src
 romkatv/powerlevel10k
 tolkonepiu/catppuccin-powerlevel10k-themes
 
-# Minimal environment for OMZ plugins
-getantidote/use-omz
-
 # Aliases and completions
 djui/alias-tips kind:defer
 ohmyzsh/ohmyzsh path:plugins/aliases
