@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754403415356,
+  "lastUpdate": 1754414156083,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2596,6 +2596,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.797,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "43d3954dfde938399a83f0149d3aa7e12d87dc5b",
+          "message": "feat: improve zsh configuration structure and aliases\n\n- Reorganize .zsh_plugins.txt with better categorization and comments\n- Add keybindings and history plugins from belak/zsh-utils\n- Add getantidote/use-omz for OMZ compatibility\n- Add tailscale plugin and improve defer loading\n- Fix aliases.zsh with consistent ldot alias for both eza/ls\n- Switch history-substring-search to vi-mode bindings (j/k)\n- Improve overall performance with proper defer attributes",
+          "timestamp": "2025-08-06T01:13:30+08:00",
+          "tree_id": "f8d88f0d964e6a9d57e1a7d6fb3353a43a1f00a3",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/43d3954dfde938399a83f0149d3aa7e12d87dc5b"
+        },
+        "date": 1754414154687,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.35,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 563.617,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 63.024,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.92,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 92.084,
             "unit": "ms"
           }
         ]
