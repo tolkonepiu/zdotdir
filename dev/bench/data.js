@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754398485115,
+  "lastUpdate": 1754400090842,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2400,6 +2400,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.66,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "c1634f1cb781c154159bc862a5416eecdc23e292",
+          "message": "Define ZSH_CACHE_DIR for caching completions and compatibility with oh-my-zsh plugins",
+          "timestamp": "2025-08-05T21:19:16+08:00",
+          "tree_id": "153cffaa980cf998a134ba9402229e0bc6d51092",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c1634f1cb781c154159bc862a5416eecdc23e292"
+        },
+        "date": 1754400089874,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.282,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 78.554,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.88,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.4,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.905,
             "unit": "ms"
           }
         ]
