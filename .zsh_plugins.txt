@@ -26,5 +26,5 @@ zshzoo/macos kind:defer conditional:is-macos
 
 # Fish-like features
 zdharma-continuum/fast-syntax-highlighting kind:defer  # Syntax highlighting
-zsh-users/zsh-autosuggestions kind:defer.              # Auto-suggestions
-zsh-users/zsh-history-substring-search kind:defer.     # Up/Down to search history
+zsh-users/zsh-autosuggestions kind:defer               # Auto-suggestions
+zsh-users/zsh-history-substring-search kind:defer      # Up/Down to search history
