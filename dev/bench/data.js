@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754414156083,
+  "lastUpdate": 1754419616777,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2645,6 +2645,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 92.084,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "e89eff1bf67d7382fc53166d7c48fb7c40f33124",
+          "message": "Remove belak/zsh-utils keybindings and history plugins",
+          "timestamp": "2025-08-06T02:45:31+08:00",
+          "tree_id": "0981672309ae2638c0af8e2dace03e34d98def6b",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/e89eff1bf67d7382fc53166d7c48fb7c40f33124"
+        },
+        "date": 1754419615827,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.802,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 467.299,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 47.325,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.328,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 71.98,
             "unit": "ms"
           }
         ]
