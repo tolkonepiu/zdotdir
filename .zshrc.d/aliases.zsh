@@ -7,11 +7,11 @@
 alias vi=vim
 
 # more ways to ls
-if command -v eza >/dev/null 2>&1; then
-    alias la='eza -a'
+if (( $+commands[eza] )); then
+    alias ls='eza'
     alias ll='eza -l'
+    alias la='eza -a'
     alias lla='eza -la'
-    alias ls=eza
     alias lt='eza --tree'
 else
     alias ls='ls --color=auto'
@@ -23,7 +23,7 @@ fi
 alias quit='exit'
 
 # find - use fd utility if available, otherwise fallback to find aliases
-if command -v fd >/dev/null 2>&1; then
+if (( $+commands[fd] )); then
     alias ff='fd -t file'
 else
     alias fd='find . -type d -name'
@@ -31,6 +31,6 @@ else
 fi
 
 # Use bat instead of cat if it's installed
-if command -v bat >/dev/null 2>&1; then
-    alias cat="bat"
+if (( $+commands[bat] )); then
+    alias cat='bat'
 fi

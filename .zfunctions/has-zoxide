@@ -1,2 +1,0 @@
-#!/bin/zsh
-[[ -n $(command -v zoxide 2>/dev/null) ]]

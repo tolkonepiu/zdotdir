@@ -1,2 +1,2 @@
 #!/bin/zsh
-[[ -n $(command -v wakatime-cli 2>/dev/null) ]]
+(( $+commands[wakatime-cli] ))

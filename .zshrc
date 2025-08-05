@@ -22,7 +22,7 @@ autoload -Uz $ZFUNCDIR/*(.:t)
 if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! ${ANTIDOTE_STATIC_FILE} -nt ${ANTIDOTE_BUNDLE_FILE} ]]; then
     (
         # Clone and initialize Antidote only if not already present.
-        if ! command -v antidote >/dev/null; then
+        if (( ! $+commands[antidote] )); then
             if [[ ! -d ${ANTIDOTE_PATH} ]]; then
                 git clone https://github.com/mattmc3/antidote ${ANTIDOTE_PATH}
             fi
