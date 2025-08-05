@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754403198277,
+  "lastUpdate": 1754403415356,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2547,6 +2547,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 33.494,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "3544a1fd2fbedefb56c9b4b20d52399987a841fa",
+          "message": "Remove dots",
+          "timestamp": "2025-08-05T22:14:01+08:00",
+          "tree_id": "6cdbe43cb4326db61bee7e24888d128ca38cf508",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/3544a1fd2fbedefb56c9b4b20d52399987a841fa"
+        },
+        "date": 1754403413737,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.061,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 75.245,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 18.657,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 4.956,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.797,
             "unit": "ms"
           }
         ]
