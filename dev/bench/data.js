@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754419834651,
+  "lastUpdate": 1754419955383,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2743,6 +2743,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 73.35,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "02719d354c45aad2567e49e94ec8ae9f4fc417b4",
+          "message": "Remove useomz plugin",
+          "timestamp": "2025-08-06T02:51:25+08:00",
+          "tree_id": "9399ecc12f7173ce7ebeca68a844fa032e1855bf",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/02719d354c45aad2567e49e94ec8ae9f4fc417b4"
+        },
+        "date": 1754419954473,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.8,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 72.605,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 20.602,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.271,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 26.553,
             "unit": "ms"
           }
         ]
