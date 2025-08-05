@@ -13,10 +13,10 @@ tolkonepiu/catppuccin-powerlevel10k-themes
 
 # Aliases
 djui/alias-tips kind:defer
-ohmyzsh/ohmyzsh path:plugins/aliases
-ohmyzsh/ohmyzsh path:plugins/brew conditional:is-macos
-ohmyzsh/ohmyzsh path:plugins/git
-ohmyzsh/ohmyzsh path:plugins/kubectl
+ohmyzsh/ohmyzsh path:plugins/aliases kind:defer
+ohmyzsh/ohmyzsh path:plugins/brew kind:defer conditional:is-macos
+ohmyzsh/ohmyzsh path:plugins/git kind:defer
+ohmyzsh/ohmyzsh path:plugins/kubectl kind:defer
 
 # Utilities
 romkatv/zsh-bench kind:path
