@@ -35,5 +35,5 @@ fi
 
 # Use bat instead of cat if it's installed
 if (( $+commands[bat] )); then
-    alias cat='bat'
+    alias cat='bat --paging=never'
 fi
