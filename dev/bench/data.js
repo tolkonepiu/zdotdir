@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754421512078,
+  "lastUpdate": 1754462432880,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2890,6 +2890,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 23.347,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "12aa47b5fb3e60d46b1df2dac2f3532b4665c20b",
+          "message": "feat: disable paging for bat alias to preserve the default behavior",
+          "timestamp": "2025-08-06T14:39:18+08:00",
+          "tree_id": "228233b4c44cd3ee3e042e29dd498926ed06f766",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/12aa47b5fb3e60d46b1df2dac2f3532b4665c20b"
+        },
+        "date": 1754462431451,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 15.711,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 90.623,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 17.79,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.611,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 28.548,
             "unit": "ms"
           }
         ]
