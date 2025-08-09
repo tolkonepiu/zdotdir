@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754462432880,
+  "lastUpdate": 1754715451904,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2939,6 +2939,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 28.548,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "2c3af0cd56bd59d0b4118430b40f018d34c46e9a",
+          "message": "chore: tweak Renovate config, CI linters, and zsh setup\n\n- Renovate: add helpers:pinGitHubActionDigests and remove customManagers\n- CI: switch reviewdog actions to fail_level=error and drop shfmt job\n- zsh: refine .zshrc comment, expand aliases, improve history-substring-search keybindings",
+          "timestamp": "2025-08-09T12:56:08+08:00",
+          "tree_id": "a39cbf6944502e7b50e8bcd8e09c469a81e5400e",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/2c3af0cd56bd59d0b4118430b40f018d34c46e9a"
+        },
+        "date": 1754715450933,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.981,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 72.011,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.71,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.038,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 23.861,
             "unit": "ms"
           }
         ]
