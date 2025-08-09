@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754715451904,
+  "lastUpdate": 1754717800342,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -2988,6 +2988,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 23.861,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "9a4955bb76107562e90f34391caaf5530c37468a",
+          "message": "fix(zsh): use  in bindkey loop to avoid 'no such keymap ''",
+          "timestamp": "2025-08-09T13:35:33+08:00",
+          "tree_id": "8251b15a5bbfe6bdbd20e910d68b53eef2aa1b02",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/9a4955bb76107562e90f34391caaf5530c37468a"
+        },
+        "date": 1754717799490,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.729,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 69.634,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.495,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.27,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 22.632,
             "unit": "ms"
           }
         ]
