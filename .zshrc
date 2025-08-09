@@ -15,7 +15,7 @@ ZFUNCDIR=${ZSH_CONFIG_PATH}/.zfunctions
 fpath=($ZFUNCDIR $fpath)
 autoload -Uz $ZFUNCDIR/*(.:t)
 
-# Set any zstyles you might use for configuration.
+# Set zstyles for configuration.
 [[ ! -f ${ZSH_CONFIG_PATH}/.zstyles ]] || source ${ZSH_CONFIG_PATH}/.zstyles
 
 # Lazy-load antidote and generate the static load file only when needed
