@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754717800342,
+  "lastUpdate": 1754718367218,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3037,6 +3037,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 22.632,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "47f6fd113395dee8e6bed11e17eed1551673516e",
+          "message": "Add Zsh history configuration\n\nIntroduce a dedicated Zsh history config that: enables extended_history, suppresses duplicates, trims blanks, appends history incrementally, and disables share_history/beeps. Also sets HISTFILE, HISTSIZE, and SAVEHIST to manage history storage.",
+          "timestamp": "2025-08-09T13:44:51+08:00",
+          "tree_id": "338fdd57a0593e33f2f4c78142e386b6abbf9d42",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/47f6fd113395dee8e6bed11e17eed1551673516e"
+        },
+        "date": 1754718366286,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.804,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 66.939,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.802,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.341,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 23.967,
             "unit": "ms"
           }
         ]
