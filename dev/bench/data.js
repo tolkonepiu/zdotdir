@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754807270903,
+  "lastUpdate": 1754807343037,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3135,6 +3135,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 22.522,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "0671ad4e9e74ed44e97ccddcc3be255a13b9149a",
+          "message": "Move README to base path",
+          "timestamp": "2025-08-10T14:27:49+08:00",
+          "tree_id": "9a58440e8d2cbf9032e5fe1da79217ab3ab497af",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/0671ad4e9e74ed44e97ccddcc3be255a13b9149a"
+        },
+        "date": 1754807341754,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.901,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 69.352,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.689,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 4.98,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 22.542,
             "unit": "ms"
           }
         ]
