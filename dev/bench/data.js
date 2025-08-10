@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754718367218,
+  "lastUpdate": 1754807270903,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3086,6 +3086,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 23.967,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "fdf485d5c7639e714da335c80a608bad32a1d4dd",
+          "message": "Add LICENSE, add description",
+          "timestamp": "2025-08-10T14:26:17+08:00",
+          "tree_id": "50166c9655957415ca01a94a6176f3a0147741a2",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/fdf485d5c7639e714da335c80a608bad32a1d4dd"
+        },
+        "date": 1754807269969,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 12.088,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 65.294,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 15.364,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.045,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 22.522,
             "unit": "ms"
           }
         ]
