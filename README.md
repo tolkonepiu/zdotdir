@@ -37,15 +37,15 @@
 
 ## Description
 
-This Zsh configuration uses [antidote](https://getantidote.github.io/) as a
+This Zsh configuration uses [antidote](https://antidote.sh/) as the
 plugin manager and [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 with
 [my custom theme](https://github.com/tolkonepiu/catppuccin-powerlevel10k-themes)
 based on the [Catppuccin](https://github.com/catppuccin/catppuccin) color
 palette.
 
-Performance is measured using [zsh-bench](https://github.com/romkatv/zsh-bench)
-for configuration benchmarks. Full benchmark data is available
+Performance is measured using [zsh-bench](https://github.com/romkatv/zsh-bench),
+and full benchmark results are available
 [here](https://tolkonepiu.github.io/zdotdir/dev/bench).
 
 ## Installation
