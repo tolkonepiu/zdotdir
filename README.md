@@ -1,12 +1,11 @@
 <!-- markdownlint-disable -->
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/Zsh-art/logo/refs/heads/main/svg/color_logomark.svg" width="150" alt="Logo"/><br/>
   <img
     src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png"
     height="30"
     width="0px"
   />
-  ZDOTDIR
+  zdotdir
   <img
     src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png"
     height="30"
