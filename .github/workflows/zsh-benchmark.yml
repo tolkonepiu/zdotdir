@@ -9,6 +9,8 @@ name: Zsh Benchmark
       - .gitignore
       - .editorconfig
       - .github/**
+      - README.md
+      - LICENSE
 
 permissions:
   # Required to post benchmark results as comments on pull requests
