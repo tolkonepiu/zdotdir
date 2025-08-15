@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755232636273,
+  "lastUpdate": 1755233010001,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3331,6 +3331,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 37.322,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "1552e01be4e2eddf947f31c8eb5ab005b52bf56a",
+          "message": "Revert \"Add editor plugin from `mattmc3/zsh_custom`\"\n\nThis reverts commit fcbae44b3d7ed695903cfd88f6f6cd1557b5171c.",
+          "timestamp": "2025-08-15T12:42:17+08:00",
+          "tree_id": "a7f06b280312117a133cf8f29e7bd0b2807f3b63",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/1552e01be4e2eddf947f31c8eb5ab005b52bf56a"
+        },
+        "date": 1755233008894,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 19.226,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 101.225,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.424,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.793,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 34.47,
             "unit": "ms"
           }
         ]
