@@ -46,7 +46,7 @@ palette.
 
 Performance is measured using [zsh-bench](https://github.com/romkatv/zsh-bench),
 and full benchmark results are available
-[here](https://tolkonepiu.github.io/zdotdir/dev/bench).
+[on the benchmark page](https://tolkonepiu.github.io/zdotdir/dev/bench).
 
 ## Installation
 
