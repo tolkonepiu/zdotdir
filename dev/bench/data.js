@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755233010001,
+  "lastUpdate": 1755234827790,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3380,6 +3380,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 34.47,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "92ee0187dfc9b760032c2720385da1fe54ea4835",
+          "message": "feat: add belak/zsh-utils editor plugin (#11)",
+          "timestamp": "2025-08-15T13:12:36+08:00",
+          "tree_id": "4fa554979bc4bb4202ce241736921ddbcb1160f2",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/92ee0187dfc9b760032c2720385da1fe54ea4835"
+        },
+        "date": 1755234826665,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.528,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 94.464,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 33.625,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.885,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 33.537,
             "unit": "ms"
           }
         ]
