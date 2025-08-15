@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754812918206,
+  "lastUpdate": 1755232636273,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3282,6 +3282,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 22.717,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "fcbae44b3d7ed695903cfd88f6f6cd1557b5171c",
+          "message": "Add editor plugin from `mattmc3/zsh_custom`",
+          "timestamp": "2025-08-15T12:35:57+08:00",
+          "tree_id": "2e8243c61397bc178b5dfca3a3563f35f56a6f3b",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/fcbae44b3d7ed695903cfd88f6f6cd1557b5171c"
+        },
+        "date": 1755232634151,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 17.466,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 94.556,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 43.724,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.103,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 37.322,
             "unit": "ms"
           }
         ]
