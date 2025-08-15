@@ -11,6 +11,7 @@ name: Zsh Benchmark
       - .github/**
       - README.md
       - LICENSE
+      - .yamllint.yml
 
 permissions:
   # Required to post benchmark results as comments on pull requests
@@ -49,7 +50,7 @@ jobs:
           TERM: screen-256color
 
       - name: 📥 Upload Benchmark Results
-        uses: benchmark-action/github-action-benchmark@v1
+        uses: benchmark-action/github-action-benchmark@v1.20.4
         with:
           name: ${{ runner.os }}
           tool: customSmallerIsBetter
