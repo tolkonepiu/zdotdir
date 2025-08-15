@@ -8,7 +8,7 @@ mattmc3/ez-compinit
 zsh-users/zsh-completions kind:fpath path:src
 
 # Keybindings
-belak/zsh-utils path:editor
+belak/zsh-utils path:editor kind:defer
 
 # Prompt
 romkatv/powerlevel10k
