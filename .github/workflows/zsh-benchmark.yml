@@ -1,17 +1,18 @@
 name: Zsh Benchmark
 
-"on":
-  pull_request:
+on:
   push:
     branches:
       - main
-    paths-ignore:
-      - .gitignore
-      - .editorconfig
-      - .github/**
-      - README.md
-      - LICENSE
-      - .yamllint.yml
+    paths: &paths
+      - .zfunctions/**
+      - .zshrc.d/**
+      - .zsh_plugins.txt
+      - .zshenv
+      - .zshrc
+      - .zstyles
+  pull_request:
+    paths: *paths
 
 permissions:
   # Required to post benchmark results as comments on pull requests
