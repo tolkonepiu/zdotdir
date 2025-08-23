@@ -3,31 +3,44 @@
 # .zshenv - Zsh environment file, loaded always.
 #
 
-# NOTE: .zshenv needs to live at ~/.zshenv, not in $ZDOTDIR!
+export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 
-# Set ZDOTDIR if you want to re-home Zsh.
+# XDG
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
 export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.cache}
-export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
+export XDG_STATE_HOME=${XDG_STATE_HOME:-$HOME/.local/state}
+export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-$HOME/.xdg}
+export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
 
-# ZSH_CONFIG_PATH - The directory containing Zsh configuration files and plugins.
+# Fish-like dirs
+: ${__zsh_config_dir:=${ZDOTDIR:-${XDG_CONFIG_HOME:-$HOME/.config}/zsh}}
+: ${__zsh_user_data_dir:=${XDG_DATA_HOME:-$HOME/.local/share}/zsh}
+: ${__zsh_cache_dir:=${XDG_CACHE_HOME:-$HOME/.cache}/zsh}
+
+# Ensure Zsh directories exist.
+() {
+  local zdir
+  for zdir in $@; do
+    [[ -d "${(P)zdir}" ]] || mkdir -p -- "${(P)zdir}"
+  done
+} __zsh_{config,user_data,cache}_dir XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_{RUNTIME,PROJECTS}_DIR
+
+
+# The directory containing Zsh configuration files and plugins.
 # This variable allows managing configurations and plugins from a custom directory.
-# If not set, it defaults to $ZDOTDIR or $HOME.
 export ZSH_CONFIG_PATH="${ZSH_CONFIG_PATH:-${ZDOTDIR}}"
 
-# ANTIDOTE_PATH - The directory where Antidote is installed. If not set, defaults to $ZDOTDIR/.antidote.
+# The directory where Antidote is installed.
 export ANTIDOTE_PATH="${ANTIDOTE_PATH:-${ZDOTDIR}/.antidote}"
 
-# ANTIDOTE_BUNDLE_FILE - The file listing the plugins to be loaded by Antidote.
-# Defaults to .zsh_plugins.txt in the Zsh configuration directory.
+# The file listing the plugins to be loaded by Antidote.
 export ANTIDOTE_BUNDLE_FILE="${ANTIDOTE_BUNDLE_FILE:-${ZSH_CONFIG_PATH}/.zsh_plugins.txt}"
 
-# ANTIDOTE_STATIC_FILE - The file where Antidote compiles all plugins for static loading.
-# Defaults to .zsh_plugins.zsh in the Zsh configuration directory.
+# The file where Antidote compiles all plugins for static loading.
 export ANTIDOTE_STATIC_FILE="${ANTIDOTE_STATIC_FILE:-${ZDOTDIR}/.zsh_plugins.zsh}"
 
-# ZOXIDE_CMD_OVERRIDE - Override the default command that zoxide uses.
+# Override the default command that zoxide uses.
 export ZOXIDE_CMD_OVERRIDE="${ZOXIDE_CMD_OVERRIDE:-cd}"
 
 # Ensure path arrays do not contain duplicates.
