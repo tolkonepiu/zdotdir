@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 env:
-  ZDOTDIR: ~/.config/zsh
+  ZDOTDIR: $GITHUB_WORKSPACE
 
 jobs:
   benchmark:
@@ -32,8 +32,6 @@ jobs:
 
       - name: 🏗️ Set Zsh environment (ZDOTDIR)
         run: |
-          mkdir -p $ZDOTDIR
-          ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
           cat ~/.zshenv
           ls $ZDOTDIR
