@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-    paths: &paths
+    paths:
       - .zfunctions/**
       - .zshrc.d/**
       - .zsh_plugins.txt
@@ -12,7 +12,6 @@ on:
       - .zshrc
       - .zstyles
   pull_request:
-    # paths: *paths
 
 permissions:
   pull-requests: write
@@ -33,8 +32,6 @@ jobs:
       - name: 🏗️ Set Zsh environment (ZDOTDIR)
         run: |
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
-          cat ~/.zshenv
-          ls $ZDOTDIR
 
       - name: 🏗️ Init Zsh environment
         run: |
