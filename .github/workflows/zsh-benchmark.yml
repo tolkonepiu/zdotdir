@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 env:
-  ZDOTDIR: $GITHUB_WORKSPACE
+  ZDOTDIR: ${{ github.workspace }}
 
 jobs:
   benchmark:
