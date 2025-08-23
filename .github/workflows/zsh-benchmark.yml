@@ -12,15 +12,15 @@ on:
       - .zshrc
       - .zstyles
   pull_request:
-    paths: *paths
+    # paths: *paths
 
 permissions:
-  # Required to post benchmark results as comments on pull requests
   pull-requests: write
-  # deployments permission to deploy GitHub pages website
   deployments: write
-  # contents permission to update benchmark contents in gh-pages branch
   contents: write
+
+env:
+  ZDOTDIR: ~/.config/zsh
 
 jobs:
   benchmark:
@@ -32,7 +32,6 @@ jobs:
 
       - name: 🏗️ Set Zsh environment (ZDOTDIR)
         run: |
-          ZDOTDIR=~/.config/zsh
           ln -s $GITHUB_WORKSPACE $ZDOTDIR
           echo ". $ZDOTDIR/.zshenv" > ~/.zshenv
 
