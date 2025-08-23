@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755234827790,
+  "lastUpdate": 1755966507632,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3429,6 +3429,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 33.537,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "bede29c8cd8ce6f73b1dd8bac26c571113b173df",
+          "message": "Return dir initialization in .zshenv",
+          "timestamp": "2025-08-24T00:27:18+08:00",
+          "tree_id": "3f3bff2c31e9a84e84e385e24d577b20c94eed8d",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/bede29c8cd8ce6f73b1dd8bac26c571113b173df"
+        },
+        "date": 1755966506198,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 16.48,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 86.629,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 25.381,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.814,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 29.05,
             "unit": "ms"
           }
         ]
