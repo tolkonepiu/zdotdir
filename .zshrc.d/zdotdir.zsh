@@ -38,7 +38,7 @@ zdotdir() {
             if command -v antidote >/dev/null; then
                 echo "Updating antidote bundles..."
                 # Update antidote bundles
-                antidote update >/dev/null || {
+                antidote update || {
                     echo "Error: Failed to update antidote bundles."
                     return 1
                 }
