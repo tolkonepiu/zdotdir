@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1755966507632,
+  "lastUpdate": 1756128255854,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3478,6 +3478,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 29.05,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "008aaf8fb54e655bab97849d482f37d0071efb36",
+          "message": "Fix with ZDOTDIR env",
+          "timestamp": "2025-08-25T21:22:33+08:00",
+          "tree_id": "92fb56fdeb60e627213239862a44ab5db0cb646a",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/008aaf8fb54e655bab97849d482f37d0071efb36"
+        },
+        "date": 1756128254721,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 20.061,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 103.481,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 26.126,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.49,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 37.529,
             "unit": "ms"
           }
         ]
