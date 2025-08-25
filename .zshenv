@@ -3,7 +3,7 @@
 # .zshenv - Zsh environment file, loaded always.
 #
 
-export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
+export ZDOTDIR=${ZDOTDIR:-$HOME/.config/zsh}
 
 # XDG
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-$HOME/.config}
