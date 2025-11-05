@@ -75,6 +75,12 @@ cd zdotdir
 bash ./install_zdotdir.sh
 ```
 
+Or run it straight from GitHub without cloning first:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/tolkonepiu/zdotdir/main/install_zdotdir.sh)
+```
+
 The installer:
 
 - clones the configured repository (default:
@@ -126,6 +132,12 @@ Use the cleanup script (again from **bash**) to restore your previous setup:
 ```bash
 cd zdotdir
 CLEAN_ZDOTDIR_REMOVE_CACHES=1 bash ./cleanup_zdotdir.sh
+```
+
+Or fetch and run it directly:
+
+```bash
+CLEAN_ZDOTDIR_REMOVE_CACHES=1 bash <(curl -fsSL https://raw.githubusercontent.com/tolkonepiu/zdotdir/main/cleanup_zdotdir.sh)
 ```
 
 It restores `~/.zshenv` from the backup the installer created, moves the
