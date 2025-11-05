@@ -57,11 +57,13 @@ Make sure these are installed _before_ running the automated installer:
 - Git (for cloning plugins and updates): `brew install git`
 - Meslo Nerd Font (bundled with Powerlevel10k) so the prompt renders correctly
 - Optional but recommended tooling:
-  - `wakatime-cli` – enables terminal usage tracking via the bundled WakaTime plugin
+  - WakaTime for Mac – download [the latest release](https://github.com/wakatime/macos-wakatime/releases/latest/download/macos-wakatime.zip), move `WakaTime.app` to `Applications`, launch it once to enter your API key, and allow it to monitor Terminal/VS Code so coding activity reaches your dashboard
   - Visual Studio Code (or VS Code Insiders) – required for shell integration support
   - `zoxide` (`brew install zoxide`) – fast directory jumping aliased to `cd`
   - `eza`, `fd`, `bat` (`brew install eza fd bat`) – unlock richer aliases; without them, standard `ls/find/cat` aliases are used
 - The rest of the plugins are fetched automatically by Antidote; no manual setup needed.
+
+The automated installer will attempt to install the optional Homebrew formulas above when `brew` is available, download WakaTime.app if it is missing, and remind you about the Meslo font and Visual Studio Code when they are not detected.
 
 > Tip: for a consistent look, apply a Catppuccin profile/theme in your terminal (iTerm2 or Apple Terminal) and grab colors from [Catppuccin](https://github.com/catppuccin/catppuccin).
 
