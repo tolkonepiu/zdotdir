@@ -144,12 +144,10 @@ export ZDOTDIR="$target"
 EOF
 
 printf ' • ensuring XDG directories exist\n'
-antidote_home="${ANTIDOTE_HOME:-${XDG_CACHE_HOME:-$HOME/.cache}/antidote}"
 mkdir -p \
   "${HOME}/.local/share/zsh" \
   "${HOME}/.local/state" \
   "${HOME}/.cache/zsh" \
-  "${antidote_home}" \
   "${HOME}/.xdg" \
   "${HOME}/Projects"
 
@@ -165,7 +163,6 @@ fi
 
 export ZDOTDIR="$target"
 export INSTALL_ZDOTDIR_DEBUG="${INSTALL_ZDOTDIR_DEBUG:-0}"
-export ANTIDOTE_HOME="$antidote_home"
 
 if [[ "$INSTALL_ZDOTDIR_DEBUG" == "1" ]]; then
   printf ' • priming plugins with timing (INSTALL_ZDOTDIR_DEBUG=1)\n'

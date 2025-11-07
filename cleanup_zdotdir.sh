@@ -11,7 +11,6 @@ target="${ZDOTDIR_TARGET:-$HOME/.config/zsh}"
 if [[ "$target" == "~"* ]]; then
   target="${HOME}${target:1}"
 fi
-antidote_home="${ANTIDOTE_HOME:-${XDG_CACHE_HOME:-$HOME/.cache}/antidote}"
 
 zshenv="$HOME/.zshenv"
 zshenv_backup="$HOME/.zshenv.pre-zdotdir"
@@ -47,7 +46,6 @@ fi
 if [[ "${CLEAN_ZDOTDIR_REMOVE_CACHES:-0}" == "1" ]]; then
   for cache in \
     "$HOME/Library/Caches/antidote" \
-    "$antidote_home" \
     "$HOME/.cache/zsh"
   do
     if [[ -d "$cache" ]]; then

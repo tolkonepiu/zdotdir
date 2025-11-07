@@ -18,28 +18,20 @@ autoload -Uz $ZFUNCDIR/*(.:t)
 # Set zstyles for configuration.
 [[ ! -f ${ZSH_CONFIG_PATH}/.zstyles ]] || source ${ZSH_CONFIG_PATH}/.zstyles
 
-# Lazy-load Antidote and regenerate the static load file only when needed.
-_zdotdir_antidote_bundle() {
-    # Clone and initialize Antidote only if not already present.
-    if (( ! $+commands[antidote] )); then
-        if [[ ! -d ${ANTIDOTE_PATH} ]]; then
-            git clone https://github.com/mattmc3/antidote ${ANTIDOTE_PATH}
-        fi
-        source ${ANTIDOTE_PATH}/antidote.zsh
-    fi
-    antidote bundle <${ANTIDOTE_BUNDLE_FILE} >${ANTIDOTE_STATIC_FILE}
-}
-
+# Lazy-load antidote and generate the static load file only when needed
 if [[ ! -f "${ANTIDOTE_STATIC_FILE}" || ! ${ANTIDOTE_STATIC_FILE} -nt ${ANTIDOTE_BUNDLE_FILE} ]]; then
-    _zdotdir_antidote_bundle
+    (
+        # Clone and initialize Antidote only if not already present.
+        if (( ! $+commands[antidote] )); then
+            if [[ ! -d ${ANTIDOTE_PATH} ]]; then
+                git clone https://github.com/mattmc3/antidote ${ANTIDOTE_PATH}
+            fi
+            source ${ANTIDOTE_PATH}/antidote.zsh
+        fi
+        antidote bundle <${ANTIDOTE_BUNDLE_FILE} >${ANTIDOTE_STATIC_FILE}
+    )
 fi
-
-if ! source ${ANTIDOTE_STATIC_FILE}; then
-    rm -f ${ANTIDOTE_STATIC_FILE}
-    _zdotdir_antidote_bundle
-    source ${ANTIDOTE_STATIC_FILE}
-fi
-unfunction _zdotdir_antidote_bundle 2>/dev/null
+source ${ANTIDOTE_STATIC_FILE}
 
 # Source anything in .zshrc.d.
 for _rc in ${ZSH_CONFIG_PATH}/.zshrc.d/*.zsh; do

@@ -85,8 +85,6 @@ The installer:
 - seeds `${ZDOTDIR}/.zsh_history` from an existing `~/.zsh_history` so
   autosuggestions are available immediately;
 - primes Antidote and Powerlevel10k caches by launching a one-off zsh session.
-- configures Antidote to cache clones under `${XDG_CACHE_HOME:-~/.cache}/antidote`
-  so the generated `~/.zsh_plugins.zsh` never points to deleted local checkouts.
 
 You can override the defaults:
 
