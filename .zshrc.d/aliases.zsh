@@ -13,7 +13,6 @@ alias ping='ping -c 5'
 alias vi=vim
 alias nv=nvim
 alias grep="${aliases[grep]:-grep} --exclude-dir={.git,.vscode}"
-alias python='/usr/bin/python3'
 
 # more ways to ls
 if (( $+commands[eza] )); then

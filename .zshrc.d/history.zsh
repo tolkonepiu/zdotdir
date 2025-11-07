@@ -14,6 +14,6 @@ setopt inc_append_history     # Write to the history file immediately, not when 
 setopt NO_hist_beep           # Don't beep when accessing non-existent history.
 setopt NO_share_history       # Don't share history between all sessions.
 
-HISTFILE="${HISTFILE:-$ZDOTDIR/.zsh_history}"
+HISTFILE="${HISTFILE:-$ZDOTDIR}/.zsh_history"
 HISTSIZE="10000"
 SAVEHIST="10000"
