@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1756128371666,
+  "lastUpdate": 1762514794019,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3576,6 +3576,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 28.125,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "karleowne@gmail.com",
+            "name": "Anatolii Karlov",
+            "username": "karle0wne"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "77679d545a3cd64d596b6a0d21ab8554b2f52204",
+          "message": "fix HISTFILE (#15)\n\n* fix HISTFILE, add installer\n\n* Updated the python alias\n\n* configures Antidote to cache clones\n\n* add bash <(curl\n\n* brew formulas pre install\n\n* Revert \"brew formulas pre install\"\n\nThis reverts commit 7abca7101b85df6f906a68778dc67771b8a85a08.\n\n* Revert \"add bash <(curl\"\n\nThis reverts commit a24fc51904e0c5ad206ee10b4119c4365f8af782.\n\n* Revert \"configures Antidote to cache clones\"\n\nThis reverts commit b66cd62ccb9574f6c2f18b376d40c590ffdeaed1.\n\n* Revert \"Updated the python alias\"\n\nThis reverts commit ea7160be9a5cbc353cbfa3e96e195cd0384ff0ba.\n\n* Revert \"fix HISTFILE, add installer\"\n\nThis reverts commit efc67bd6c47a0c44eeda96b1e5cf26f9051bfff7.\n\n* HISTFILE fix",
+          "timestamp": "2025-11-07T19:25:23+08:00",
+          "tree_id": "38d43f6a960b669ad8a4b4f85e0d7eb7386e20ad",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/77679d545a3cd64d596b6a0d21ab8554b2f52204"
+        },
+        "date": 1762514792490,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.873,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 101.352,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 31.293,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.506,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 34.189,
             "unit": "ms"
           }
         ]
