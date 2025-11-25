@@ -3,10 +3,9 @@
 # .zshrc - Zsh file loaded on interactive shell sessions.
 #
 
-# Set POWERLEVEL9K_INSTANT_PROMPT to quiet if not in HOME directory
-if [[ "$PWD" != "$HOME" ]]; then
-    typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-fi
+# Initialize direnv when using instant prompt
+# See: https://github.com/romkatv/powerlevel10k#how-do-i-initialize-direnv-when-using-instant-prompt
+(( ${+commands[direnv]} )) && emulate zsh -c "$(direnv export zsh)"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of .zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
