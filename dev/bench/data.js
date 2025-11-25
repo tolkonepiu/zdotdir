@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762514794019,
+  "lastUpdate": 1764078912858,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3625,6 +3625,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 34.189,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "e3c73814b8b2d099179234bfd88966081f40bc9c",
+          "message": "feat: set Powerlevel10k instant prompt to quiet outside HOME directory",
+          "timestamp": "2025-11-25T21:54:07+08:00",
+          "tree_id": "4f944888590f7b80cb87471114acb78a5047f3a1",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/e3c73814b8b2d099179234bfd88966081f40bc9c"
+        },
+        "date": 1764078911819,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.738,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 92.541,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 33.107,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.689,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.932,
             "unit": "ms"
           }
         ]
