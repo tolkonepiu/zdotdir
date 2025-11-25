@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764078912858,
+  "lastUpdate": 1764080560486,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3674,6 +3674,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.932,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "dcc34ff226469f513a173b9ffa966eb7078a4898",
+          "message": "feat: initialize direnv before Powerlevel10k instant prompt",
+          "timestamp": "2025-11-25T22:21:22+08:00",
+          "tree_id": "8274591f681608a540baf3c8378ccb5fda8cce19",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/dcc34ff226469f513a173b9ffa966eb7078a4898"
+        },
+        "date": 1764080558608,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 21.337,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 102.999,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 30.103,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.361,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 37.182,
             "unit": "ms"
           }
         ]
