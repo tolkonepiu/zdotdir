@@ -24,7 +24,7 @@ export XDG_PROJECTS_DIR=${XDG_PROJECTS_DIR:-$HOME/Projects}
   for zdir in $@; do
     [[ -d "${(P)zdir}" ]] || mkdir -p -- "${(P)zdir}"
   done
-} __zsh_{config,user_data,cache}_dir XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_{RUNTIME,PROJECTS}_DIR
+} __zsh_{config,user_data,cache}_dir XDG_{CONFIG,CACHE,DATA,STATE}_HOME XDG_RUNTIME_DIR
 
 # The directory containing Zsh configuration files and plugins.
 # This variable allows managing configurations and plugins from a custom directory.
