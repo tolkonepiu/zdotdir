@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764080560486,
+  "lastUpdate": 1769359136981,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3723,6 +3723,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 37.182,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "aa17dcb77752f63a165673a2bc62c0a2a9ddef46",
+          "message": "fix: Remove XDG_PROJECTS_DIR from auto-create loop",
+          "timestamp": "2026-01-26T00:37:53+08:00",
+          "tree_id": "3d729b5be11df270885f239d0e718d221ec64fbe",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/aa17dcb77752f63a165673a2bc62c0a2a9ddef46"
+        },
+        "date": 1769359135658,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 19.181,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 85.296,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 25.024,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.788,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 31.294,
             "unit": "ms"
           }
         ]
