@@ -1,0 +1,2 @@
+#!/bin/zsh
+(( $+commands[$1] || $+functions[$1] || $+aliases[$1] || $+builtins[$1] ))

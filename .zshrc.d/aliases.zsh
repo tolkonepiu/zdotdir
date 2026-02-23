@@ -15,7 +15,7 @@ alias nv=nvim
 alias grep="${aliases[grep]:-grep} --exclude-dir={.git,.vscode}"
 
 # more ways to ls
-if (( $+commands[eza] )); then
+if is-callable eza; then
     alias ls='eza'
     alias ll='eza -l'
     alias la='eza -a'
@@ -44,7 +44,7 @@ alias utc="date -u +%Y-%m-%dT%H:%M:%SZ"
 alias unixepoch="date +%s"
 
 # Use fd utility if available, otherwise fallback to find aliases
-if (( $+commands[fd] )); then
+if is-callable fd; then
     alias ff='fd -t file'
 else
     alias fd='find . -type d -name'
@@ -52,6 +52,6 @@ else
 fi
 
 # Use bat instead of cat if it's installed
-if (( $+commands[bat] )); then
+if is-callable bat; then
     alias cat='bat --paging=never --decorations never'
 fi

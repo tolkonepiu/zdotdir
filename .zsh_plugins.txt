@@ -24,10 +24,10 @@ ohmyzsh/ohmyzsh path:plugins/kubectl kind:defer
 # Utilities
 romkatv/zsh-bench kind:path
 tolkonepiu/vscode-shell-integration-zsh-plugin
-tolkonepiu/wakatime-zsh-plugin kind:defer conditional:has-wakatime
+tolkonepiu/wakatime-zsh-plugin kind:defer conditional:'is-callable wakatime-cli'
 zshzoo/macos kind:defer conditional:is-macos
 
 # Fish-like features
-zdharma-continuum/fast-syntax-highlighting kind:defer  # Syntax highlighting
-zsh-users/zsh-autosuggestions kind:defer               # Auto-suggestions
-zsh-users/zsh-history-substring-search kind:defer      # Up/Down to search history
+zdharma-continuum/fast-syntax-highlighting kind:defer                                # Syntax highlighting
+zsh-users/zsh-autosuggestions kind:defer                                             # Auto-suggestions
+zsh-users/zsh-history-substring-search kind:defer conditional:'! is-callable atuin'  # Up/Down to search history
