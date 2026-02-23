@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1769359136981,
+  "lastUpdate": 1771823559065,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3772,6 +3772,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 31.294,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "40e938a722b6cbc905ad39cb8b547d29c71b2567",
+          "message": "feat: add is-callable function and disable history-substring-search when atuin is available",
+          "timestamp": "2026-02-23T13:11:39+08:00",
+          "tree_id": "fb001354e4aebe405f3d20b5e5f6863f799c5891",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/40e938a722b6cbc905ad39cb8b547d29c71b2567"
+        },
+        "date": 1771823557641,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.531,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 81.536,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 26.593,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.426,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 30.209,
             "unit": "ms"
           }
         ]
