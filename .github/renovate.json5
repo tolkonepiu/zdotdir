@@ -8,7 +8,7 @@
       description: "Update antidote plugin pins from configured GitHub branches",
       managerFilePatterns: ["/^\\.zsh_plugins\\.txt$/"],
       matchStrings: [
-        "^(?<packageName>[^\\s#/]+/[^\\s#]+)\\s+branch:(?<currentValue>[^\\s]+)\\s+pin:(?<currentDigest>[a-f0-9]{40})",
+        "(?:^|\\r?\\n)(?<packageName>[^\\s#/]+/[^\\s#]+)\\s+branch:(?<currentValue>[^\\s]+)\\s+pin:(?<currentDigest>[a-f0-9]{40})[^\\r\\n]*",
       ],
       datasourceTemplate: "github-digest",
       versioningTemplate: "exact",
