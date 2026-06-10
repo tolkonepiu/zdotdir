@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1771823559065,
+  "lastUpdate": 1781070017197,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -3821,6 +3821,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 30.209,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1fffd55c3a0789060711f0192540fe76a3ecea92",
+          "message": "chore(renovate): update zsh plugin pin management (#23)",
+          "timestamp": "2026-06-10T13:39:18+08:00",
+          "tree_id": "6135e686669ece45c3b1bd131f4380a9646bfc63",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/1fffd55c3a0789060711f0192540fe76a3ecea92"
+        },
+        "date": 1781070015595,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.308,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 84.189,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 28.254,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.411,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 31.586,
             "unit": "ms"
           }
         ]
