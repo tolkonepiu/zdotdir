@@ -4,30 +4,34 @@
 #
 
 # Completions
-mattmc3/ez-compinit
-zsh-users/zsh-completions kind:fpath path:src
+mattmc3/ez-compinit branch:main pin:5c9b6da88a463573e26e6846ff164026640ef2f6
+zsh-users/zsh-completions branch:master pin:dd83145816fe2d90b1ab4154ed528050e94ac5e3 kind:fpath path:src
 
 # Keybindings
-belak/zsh-utils path:editor
+belak/zsh-utils branch:main pin:be71275c50506bf2dbedfd21c0fb5adcc5847c92 path:editor
 
 # Prompt
-romkatv/powerlevel10k
-tolkonepiu/catppuccin-powerlevel10k-themes
+romkatv/powerlevel10k branch:master pin:a0c9dbe80be404ff58e3ce5d7cf312582e370635
+tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:1268200207e6871f29b5c4e9bd507772b4b1e7e9
 
 # Aliases
-djui/alias-tips kind:defer
-ohmyzsh/ohmyzsh path:plugins/aliases kind:defer
-ohmyzsh/ohmyzsh path:plugins/brew kind:defer conditional:is-macos
-ohmyzsh/ohmyzsh path:plugins/git kind:defer
-ohmyzsh/ohmyzsh path:plugins/kubectl kind:defer
+djui/alias-tips branch:master pin:41cb143ccc3b8cc444bf20257276cb43275f65c4 kind:defer
+ohmyzsh/ohmyzsh branch:master pin:630a7c04c309a53f15e6a433c859867db17cc90e path:plugins/aliases kind:defer
+ohmyzsh/ohmyzsh branch:master pin:630a7c04c309a53f15e6a433c859867db17cc90e path:plugins/brew kind:defer conditional:is-macos
+ohmyzsh/ohmyzsh branch:master pin:630a7c04c309a53f15e6a433c859867db17cc90e path:plugins/git kind:defer
+ohmyzsh/ohmyzsh branch:master pin:630a7c04c309a53f15e6a433c859867db17cc90e path:plugins/kubectl kind:defer
 
 # Utilities
-romkatv/zsh-bench kind:path
-tolkonepiu/vscode-shell-integration-zsh-plugin
-tolkonepiu/wakatime-zsh-plugin kind:defer conditional:'is-callable wakatime-cli'
-zshzoo/macos kind:defer conditional:is-macos
+romkatv/zsh-bench branch:master pin:28b1b1bc888159f0a2cf50f9d29381758341aba1 kind:path
+tolkonepiu/vscode-shell-integration-zsh-plugin branch:main pin:5929ec06fb9a41d8f06af38556308c1951aca6eb
+tolkonepiu/wakatime-zsh-plugin branch:master pin:45d74478745f5faf8d1bafa83e6b76bcc6c1c29a kind:defer conditional:'is-callable wakatime-cli'
+zshzoo/macos branch:main pin:440e565ef0f31c4aaa51f720dffc652601155eed kind:defer conditional:is-macos
 
-# Fish-like features
-zdharma-continuum/fast-syntax-highlighting kind:defer                                # Syntax highlighting
-zsh-users/zsh-autosuggestions kind:defer                                             # Auto-suggestions
-zsh-users/zsh-history-substring-search kind:defer conditional:'! is-callable atuin'  # Up/Down to search history
+# Syntax highlighting
+zdharma-continuum/fast-syntax-highlighting branch:master pin:3d574ccf48804b10dca52625df13da5edae7f553 kind:defer
+
+# Auto-suggestions
+zsh-users/zsh-autosuggestions branch:master pin:85919cd1ffa7d2d5412f6d3fe437ebdbeeec4fc5 kind:defer
+
+# Up/Down to search history
+zsh-users/zsh-history-substring-search branch:master pin:14c8d2e0ffaee98f2df9850b19944f32546fdea5 kind:defer conditional:'! is-callable atuin'
