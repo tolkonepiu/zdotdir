@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1781311435874,
+  "lastUpdate": 1781447777117,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -4017,6 +4017,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 34.903,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "me@popov.wtf",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "distinct": true,
+          "id": "173f9bd145a2d146d1b3d8024f29264dd9525ed5",
+          "message": "refactor(zsh): simplify zdotdir update logic",
+          "timestamp": "2026-06-14T22:35:20+08:00",
+          "tree_id": "f8999a5b96ac86a7c86e52d1fb97741718b21295",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/173f9bd145a2d146d1b3d8024f29264dd9525ed5"
+        },
+        "date": 1781447775735,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 20.092,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 85.386,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 29.644,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.599,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 29.863,
             "unit": "ms"
           }
         ]
