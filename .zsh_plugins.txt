@@ -5,7 +5,7 @@
 
 # Completions
 mattmc3/ez-compinit branch:main pin:5c9b6da88a463573e26e6846ff164026640ef2f6
-zsh-users/zsh-completions branch:master pin:3287c3dd30f79a76f1543d7902502def8be20992 kind:fpath path:src
+zsh-users/zsh-completions branch:master pin:4b23ecd62a9ad79ddf2ac03c0bd8a7b43266508c kind:fpath path:src
 
 # Keybindings
 belak/zsh-utils branch:main pin:be71275c50506bf2dbedfd21c0fb5adcc5847c92 path:editor
