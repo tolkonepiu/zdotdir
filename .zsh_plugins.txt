@@ -11,7 +11,7 @@ zsh-users/zsh-completions branch:master pin:4b23ecd62a9ad79ddf2ac03c0bd8a7b43266
 belak/zsh-utils branch:main pin:be71275c50506bf2dbedfd21c0fb5adcc5847c92 path:editor
 
 # Prompt
-romkatv/powerlevel10k branch:master pin:a0c9dbe80be404ff58e3ce5d7cf312582e370635
+romkatv/powerlevel10k branch:master pin:9253fb1c5034410c43a0c681ff8294181c54016c
 tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:1268200207e6871f29b5c4e9bd507772b4b1e7e9
 
 # Aliases
