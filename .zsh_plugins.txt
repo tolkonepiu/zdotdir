@@ -12,7 +12,7 @@ belak/zsh-utils branch:main pin:be71275c50506bf2dbedfd21c0fb5adcc5847c92 path:ed
 
 # Prompt
 romkatv/powerlevel10k branch:master pin:9253fb1c5034410c43a0c681ff8294181c54016c
-tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:1268200207e6871f29b5c4e9bd507772b4b1e7e9
+tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:6e72187953e5e9face7fbf8dcc926d691f7d1f2d
 
 # Aliases
 djui/alias-tips branch:master pin:41cb143ccc3b8cc444bf20257276cb43275f65c4 kind:defer
