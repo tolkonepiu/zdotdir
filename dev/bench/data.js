@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783454546977,
+  "lastUpdate": 1783677832882,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -4703,6 +4703,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 32.279,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "38ec4b1848aceae9cc6c3cfa8a87a6e47cf2fc07",
+          "message": "chore(deps): update zsh-users/zsh-completions digest to f63d0e6 (#45)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-07-10T10:02:49Z",
+          "tree_id": "93612eaf999df105c6269c3be1d05508b88f2c9b",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/38ec4b1848aceae9cc6c3cfa8a87a6e47cf2fc07"
+        },
+        "date": 1783677831047,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 20.326,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 89.878,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 25.918,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.621,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 32.74,
             "unit": "ms"
           }
         ]
