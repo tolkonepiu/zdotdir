@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785779900255,
+  "lastUpdate": 1785969593431,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -5438,6 +5438,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 39.87,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "798d69fa178cb7b217f09579117de47f0f2c9f17",
+          "message": "chore(deps): update ohmyzsh/ohmyzsh digest to 076d692 (#64)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-08-05T22:38:54Z",
+          "tree_id": "d74bfcd4d8f8da707185f2688fe92a46b64a3a0b",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/798d69fa178cb7b217f09579117de47f0f2c9f17"
+        },
+        "date": 1785969591653,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 25.778,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 89.864,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 21.596,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.793,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 30.834,
             "unit": "ms"
           }
         ]
