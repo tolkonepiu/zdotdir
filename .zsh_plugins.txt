@@ -28,7 +28,7 @@ tolkonepiu/wakatime-zsh-plugin branch:master pin:45d74478745f5faf8d1bafa83e6b76b
 zshzoo/macos branch:main pin:440e565ef0f31c4aaa51f720dffc652601155eed kind:defer conditional:is-macos
 
 # Syntax highlighting
-zdharma-continuum/fast-syntax-highlighting branch:master pin:3d574ccf48804b10dca52625df13da5edae7f553 kind:defer
+zdharma-continuum/fast-syntax-highlighting branch:master pin:4672ad5dd9ad68a7effc1476d65afb7c584ce2b3 kind:defer
 
 # Auto-suggestions
 zsh-users/zsh-autosuggestions branch:master pin:85919cd1ffa7d2d5412f6d3fe437ebdbeeec4fc5 kind:defer
