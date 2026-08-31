@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788122717352,
+  "lastUpdate": 1788199743581,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -6271,6 +6271,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 35.793,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a679867edc4a053c358bcf2baceead4f7d70606b",
+          "message": "chore(deps): update zdharma-continuum/fast-syntax-highlighting digest to 4672ad5 (#82)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-08-31T18:07:55Z",
+          "tree_id": "b7173c5b6b7b01d1cf33cc6e1a84d607b980272f",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/a679867edc4a053c358bcf2baceead4f7d70606b"
+        },
+        "date": 1788199741866,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 23.193,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 94.681,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 29.237,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.831,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.989,
             "unit": "ms"
           }
         ]
