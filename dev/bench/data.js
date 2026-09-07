@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788743332805,
+  "lastUpdate": 1788756482922,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -6614,6 +6614,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 40.059,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c8c9457dbee1727dab47a906d042accffedcc3af",
+          "message": "chore(deps): update romkatv/powerlevel10k digest to d05a1b0 (#90)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-09-07T04:46:51Z",
+          "tree_id": "9082d966774edb4eb971428f333697bf51a13b75",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c8c9457dbee1727dab47a906d042accffedcc3af"
+        },
+        "date": 1788756481547,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 22.031,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 101.547,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 31.763,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.027,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 39.54,
             "unit": "ms"
           }
         ]
