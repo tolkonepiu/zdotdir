@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1789835470063,
+  "lastUpdate": 1789882403151,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -7300,6 +7300,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 31.316,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd7a5c5b7d3c07dcce42d9adf85807958f9da826",
+          "message": "chore(deps): update zsh-users/zsh-history-substring-search digest to a0bdb0d (#109)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-09-20T05:32:20Z",
+          "tree_id": "78ccefeb15db7bf588745378f7fe13b7ce46df04",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/bd7a5c5b7d3c07dcce42d9adf85807958f9da826"
+        },
+        "date": 1789882401941,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 18.623,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 83.324,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 32.452,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.629,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 31.79,
             "unit": "ms"
           }
         ]
