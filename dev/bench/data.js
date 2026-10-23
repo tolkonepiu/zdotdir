@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792758691455,
+  "lastUpdate": 1792791159935,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -8329,6 +8329,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 30.897,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "29139614+renovate[bot]@users.noreply.github.com",
+            "name": "renovate[bot]",
+            "username": "renovate[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fc37c45fa6d7aabe9474f764271a4c7e7ce747aa",
+          "message": "chore(deps): update tolkonepiu/catppuccin-powerlevel10k-themes digest to 2d615eb (#139)\n\nCo-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>",
+          "timestamp": "2026-10-23T21:31:46Z",
+          "tree_id": "1ab277bf9cd9afe084dc7b7bc907e8feaa78c0d1",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/fc37c45fa6d7aabe9474f764271a4c7e7ce747aa"
+        },
+        "date": 1792791158511,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 17.429,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 76.138,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 19.486,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.035,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 29.052,
             "unit": "ms"
           }
         ]
