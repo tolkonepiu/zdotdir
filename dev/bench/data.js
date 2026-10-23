@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1792596490308,
+  "lastUpdate": 1792758691455,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -8280,6 +8280,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 37.911,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3e7db65fe100fb6dc225bc17307f8969c877c109",
+          "message": "chore: remove keybindings plugin",
+          "timestamp": "2026-10-23T20:30:36+08:00",
+          "tree_id": "a94b5e19b5924febf0a357f79e2bda1d7596225a",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/3e7db65fe100fb6dc225bc17307f8969c877c109"
+        },
+        "date": 1792758689906,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 19.832,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 81.808,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 16.512,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 5.508,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 30.897,
             "unit": "ms"
           }
         ]
