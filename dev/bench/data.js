@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1793974712819,
+  "lastUpdate": 1793974966019,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -8623,6 +8623,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 41.381,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e8fcbfeacc7e2d2462f488d7b8d68e9d76bb3d02",
+          "message": "Update .zsh_plugins.txt",
+          "timestamp": "2026-11-06T22:21:40+08:00",
+          "tree_id": "4b06493af49efd8090f53dcbe4c308c3ea92417d",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/e8fcbfeacc7e2d2462f488d7b8d68e9d76bb3d02"
+        },
+        "date": 1793974964621,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 19.744,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 82.709,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 20.125,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 15.13,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 33.498,
             "unit": "ms"
           }
         ]
