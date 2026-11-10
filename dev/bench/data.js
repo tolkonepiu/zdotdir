@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1794291004118,
+  "lastUpdate": 1794295953258,
   "repoUrl": "https://github.com/tolkonepiu/zdotdir",
   "entries": {
     "macOS": [
@@ -8819,6 +8819,55 @@ window.BENCHMARK_DATA = {
           {
             "name": "exit_time_ms",
             "value": 36.542,
+            "unit": "ms"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tolkonepiu@users.noreply.github.com",
+            "name": "Pavel Popov",
+            "username": "tolkonepiu"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c23419e950e9dc425d290abd2e87f8e7ffb6784a",
+          "message": "feat: replaced zsh-syntax-highlighting with fast-syntax-highlighting",
+          "timestamp": "2026-11-10T15:31:26+08:00",
+          "tree_id": "cf815624be79ac185190e8e0e6a56894076fa679",
+          "url": "https://github.com/tolkonepiu/zdotdir/commit/c23419e950e9dc425d290abd2e87f8e7ffb6784a"
+        },
+        "date": 1794295951502,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "first_prompt_lag_ms",
+            "value": 23.618,
+            "unit": "ms"
+          },
+          {
+            "name": "first_command_lag_ms",
+            "value": 108.511,
+            "unit": "ms"
+          },
+          {
+            "name": "command_lag_ms",
+            "value": 23.321,
+            "unit": "ms"
+          },
+          {
+            "name": "input_lag_ms",
+            "value": 6.387,
+            "unit": "ms"
+          },
+          {
+            "name": "exit_time_ms",
+            "value": 40.175,
             "unit": "ms"
           }
         ]
