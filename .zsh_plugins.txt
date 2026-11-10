@@ -24,7 +24,7 @@ tolkonepiu/vscode-shell-integration-zsh-plugin branch:main pin:5929ec06fb9a41d8f
 zshzoo/macos branch:main pin:440e565ef0f31c4aaa51f720dffc652601155eed kind:defer conditional:is-macos
 
 # Syntax highlighting
-zsh-users/zsh-syntax-highlighting branch:master pin:e6683f20e5c38d3e5447f45845d04ddda75d0f23 kind:defer
+zdharma-continuum/fast-syntax-highlighting branch:master pin:4672ad5dd9ad68a7effc1476d65afb7c584ce2b3 kind:defer
 
 # Auto-suggestions
 zsh-users/zsh-autosuggestions branch:master pin:85919cd1ffa7d2d5412f6d3fe437ebdbeeec4fc5 kind:defer
