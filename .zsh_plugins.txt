@@ -13,10 +13,10 @@ tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:71af4ed21b9f04628a34d
 
 # Aliases
 djui/alias-tips branch:master pin:41cb143ccc3b8cc444bf20257276cb43275f65c4 kind:defer
-ohmyzsh/ohmyzsh branch:master pin:6010fb6260f359e71d99ba25f05f9215809b3ed2 path:plugins/aliases kind:defer
-ohmyzsh/ohmyzsh branch:master pin:6010fb6260f359e71d99ba25f05f9215809b3ed2 path:plugins/brew kind:defer conditional:is-macos
-ohmyzsh/ohmyzsh branch:master pin:6010fb6260f359e71d99ba25f05f9215809b3ed2 path:plugins/git kind:defer
-ohmyzsh/ohmyzsh branch:master pin:6010fb6260f359e71d99ba25f05f9215809b3ed2 path:plugins/kubectl kind:defer
+ohmyzsh/ohmyzsh branch:master pin:c0140703a53eb0d22be44f7bac318d0baacc927c path:plugins/aliases kind:defer
+ohmyzsh/ohmyzsh branch:master pin:c0140703a53eb0d22be44f7bac318d0baacc927c path:plugins/brew kind:defer conditional:is-macos
+ohmyzsh/ohmyzsh branch:master pin:c0140703a53eb0d22be44f7bac318d0baacc927c path:plugins/git kind:defer
+ohmyzsh/ohmyzsh branch:master pin:c0140703a53eb0d22be44f7bac318d0baacc927c path:plugins/kubectl kind:defer
 
 # Utilities
 romkatv/zsh-bench branch:master pin:28b1b1bc888159f0a2cf50f9d29381758341aba1 kind:path
