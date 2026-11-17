@@ -1,22 +1,33 @@
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
-  extends: ["config:best-practices"],
-  dependencyDashboard: false,
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices',
+  ],
+  dependencyDashboard: {
+    enabled: false,
+  },
   customManagers: [
     {
-      customType: "regex",
-      description: "Update antidote plugin pins from configured GitHub branches",
-      managerFilePatterns: ["/^\\.zsh_plugins\\.txt$/"],
-      matchStrings: [
-        "(?:^|\\r?\\n)(?<packageName>[^\\s#/]+/[^\\s#]+)\\s+branch:(?<currentValue>[^\\s]+)\\s+pin:(?<currentDigest>[a-f0-9]{40})[^\\r\\n]*",
+      customType: 'regex',
+      description: 'Update antidote plugin pins from configured GitHub branches',
+      managerFilePatterns: [
+        '/^\\.zsh_plugins\\.txt$/',
       ],
-      datasourceTemplate: "github-digest",
-      versioningTemplate: "exact",
+      matchStrings: [
+        '(?:^|\\r?\\n)(?<packageName>[^\\s#/]+/[^\\s#]+)\\s+branch:(?<currentValue>[^\\s]+)\\s+pin:(?<currentDigest>[a-f0-9]{40})[^\\r\\n]*',
+      ],
+      datasourceTemplate: 'github-digest',
+      versioningTemplate: 'exact',
     },
   ],
   packageRules: [
     {
-      matchUpdateTypes: ["minor", "patch", "pin", "digest"],
+      matchUpdateTypes: [
+        'minor',
+        'patch',
+        'pin',
+        'digest',
+      ],
       automerge: true,
     },
   ],
