@@ -8,7 +8,7 @@ mattmc3/ez-compinit branch:main pin:5c9b6da88a463573e26e6846ff164026640ef2f6
 zsh-users/zsh-completions branch:master pin:989b23277ab33e8d5e82df6aed936e846db9d8b8 kind:fpath path:src
 
 # Prompt
-romkatv/powerlevel10k branch:master pin:64df59615df306c7a8bb37d0a5a1ebc46337dfb1
+romkatv/powerlevel10k branch:master pin:50a35cc8d9f1488d18fb8aea6cddcfc31189cc9f
 tolkonepiu/catppuccin-powerlevel10k-themes branch:main pin:71af4ed21b9f04628a34d4ed4c1cb307cbd024c7
 
 # Aliases
